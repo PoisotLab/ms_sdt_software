@@ -1,0 +1,43 @@
+---
+title: A Julia toolkit for species distribution data
+authors:
+  - name: Timothée Poisot
+    affiliation:
+        - ref: udem
+    roles: writing
+    email: timothee.poisot@umontreal.ca
+    corresponding: true
+affiliations:
+    - id: udem
+      name: Département de Sciences Biologiques, Université de Montréal, Montréal, Canada
+bibliography: references.bib
+engine: julia
+abstract: LATER
+---
+
+## Introduction
+
+## Application description
+
+### Component packages
+
+### Software information
+
+### Integration with other packages
+
+- Makie
+- DataFrames (Tables)
+- Arrays interface
+- interfaces built in the package
+
+## Worked out example
+
+In this section, we provide a worked out example of (i) collecting data on historical and future climate, (ii) projecting these data into a new CRS, (iii) collecting occurrence data within a country boundaries, (iv) training a random-forest classifier for the species, and (v) transfering this model to future climate data. This provides an illutration of most of the components of the package.
+
+### CS 1
+
+### CS 2
+
+### CS 3
+
+## References

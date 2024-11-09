@@ -1,0 +1,41 @@
+title: Generic Preprint Template
+author: Timothée Poisot
+version: 0.0.1
+contributes:
+  formats:
+    common:
+      filters:
+      shortcodes:
+        - shortcodes.lua
+      knitr:
+        opts_chunk:
+          echo: false
+    pdf:
+      documentclass: article
+      toc: false
+      colorlinks: true
+      fig-width: 6.5
+      fig-height: 4.5
+      csl: https://www.zotero.org/styles/ecology-letters
+      # Set this below (`biblio-config: false`) if your cls already load a bst file
+      # biblio-config: false
+      # Content to add in header that your format is using
+      #header-includes: |
+      #  \usepackage{orcidlink}
+      #  \usepackage{preprint}
+      template-partials:
+        - "partials/title.tex"
+        - "partials/_authors.tex"
+        - "partials/_authors_data.tex"
+        - "partials/after-body.tex"
+        - "partials/before-body.tex"
+      format-resources:
+        - preprint.sty
+        - te.bst
+    html:
+      # define default configuration for the html version of your format
+      number-sections: true
+      toc: true
+      theme: custom.scss
+      # Use a CSL file to style (https://www.zotero.org/styles/)
+      csl: https://www.zotero.org/styles/journal-of-institutional-and-theoretical-economics

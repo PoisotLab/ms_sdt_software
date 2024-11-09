@@ -1,0 +1,10 @@
+$-- Placed at the end of the body, after 'include-after' content
+$-- %%%%%%%%%%%%%%%
+
+$if(formatting.author-sheet)$
+\newpage
+\thispagestyle{empty}
+
+\section*{Authorship information}
+${ by-author:_authors_data.tex() }
+$endif$

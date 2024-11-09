@@ -1,0 +1,33 @@
+$-- Implements the frontmatter, title page, and abstract.
+$--
+$-- %%%% TODO %%%%%
+$-- Customize is needed, otherwise remove this partials to use Quarto default one
+$-- %%%%%%%%%%%%%%%%
+
+$if(formatting.draft-format)$\thispagestyle{empty}$endif$
+{\bfseries\sffamily\Large ${title}}
+$if(formatting.masked-review)$
+$else$
+$if(formatting.draft-format)$\vfil$else$\vskip 1em$endif$
+${ by-author:_authors.tex()[; ] }
+$endif$
+$if(formatting.draft-format)$\vfil$else$\vskip 2em$endif$
+{\small
+$if(abstract)$
+\textbf{Abstract:} $abstract$
+$endif$
+$if(formatting.draft-format)$\vfil$else$\vskip 1em$endif$
+$if(keywords)$
+\textbf{Keywords:} %
+$for(keywords/allbutlast)$${it}, $endfor$%
+$for(keywords/last)$${it}$endfor$%
+$endif$
+}
+$if(formatting.draft-format)$\clearpage$else$\vskip 4em$endif$
+$if(formatting.draft-format)$
+\setcounter{page}{1}
+\doublespacing
+\linenumbers
+$else$
+\flushleft
+$endif$

@@ -1,0 +1,7 @@
+$it.name.literal$ %
+$if(it.affiliations)$%
+\textsuperscript{%
+$for(it.affiliations/allbutlast)$$it.number$,$endfor$%
+$for(it.affiliations/last)$$it.number$$endfor$%
+}%
+$endif$

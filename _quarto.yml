@@ -1,0 +1,38 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+lang: en-CA
+
+format:
+  html:
+    comments:
+      hypothesis: true
+  docx: default
+  preprint-pdf:
+    csl: https://www.zotero.org/styles/methods-in-ecology-and-evolution
+    mainfont: TeX Gyre Pagella Math
+    monofont: TeX Gyre Termes
+    sansfont: TeX Gyre Heros 
+    formatting:
+      draft-format: true
+      author-sheet: true
+  typst:
+    citeproc: true
+    mainfont: "Palatino"
+    font-size: 12pt
+    papersize: us-letter
+    include-before-body:
+      - text: |
+        #set figure(placement: auto)
+    margin:
+      x: 3cm
+      y: 3cm
+
+execute:
+  freeze: true
+
+
+
