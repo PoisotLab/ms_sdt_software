@@ -17,6 +17,8 @@ abstract: LATER
 
 ## Introduction
 
+ref to Kaas 2024 on integration - interoperability is done through interfaces, show some examples
+
 ## Application description
 
 ### Component packages
@@ -26,6 +28,8 @@ abstract: LATER
 ### Integration with other packages
 
 The **SDT** package benefits from close integration with other packages in the Julia universe. Notably, this includes **Makie** (and all related backends) for plotting and data visualisation, where usual plot types are overloaded for layer and occurrence data. Most data can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ**. Interfaces internal to Julia are also implemented whenever they make sense. Layers behave like arrays, are iterable, and broadcastable; occurrences collections are arrays and iterables. Beyong supporting external interfaces, **SDT** defines its own internally. Access to raster data is supported by a trait-based interface for **SimpleSDMDatasets**, and one of the component packages (**OccurrencesInterface** implements a minimalist interface to facilite the consumption of occurrence data.
+
+Internal use of other interfaces like StatsAPI
 
 ## Worked out example
 
@@ -38,6 +42,8 @@ provider = RasterData{CHELSA2, BioClim}
 ```
 
 ### CS 2
+
+something with clustering?
 
 ### CS 3
 
