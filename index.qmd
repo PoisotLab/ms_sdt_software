@@ -37,14 +37,14 @@ In this section, we provide a worked out example of (i) collecting data on histo
 
 ### Collecting climate data
 
-```{julia}
-provider = RasterData{CHELSA2, BioClim}
-```
+?
 
 ### CS 2
 
 something with clustering?
 
 ### CS 3
+
+virtual species
 
 ## References
