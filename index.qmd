@@ -17,7 +17,7 @@ abstract: LATER
 
 ## Introduction
 
-Species Distribution Models (SDMs) are one of the most effective tool to predict the [@Elith2009]
+Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019].
 
 ## Application description
 
