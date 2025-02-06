@@ -45,11 +45,11 @@ The **SDT** package benefits from close integration with other packages in the J
 
 Internal use of other interfaces like StatsAPI
 
-## Worked out example
+## Illustrative case studies
 
-In this section, we provide a worked out example of (i) collecting data on historical and future climate, (ii) projecting these data into a new CRS, (iii) collecting occurrence data within a country boundaries, (iv) training a random-forest classifier for the species, and (v) transfering this model to future climate data. This provides an illutration of most of the components of the package.
+In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The case studies presented in this manuscript are reproduced in the online
 
-### Collecting climate data
+### CS 1
 
 ?
 
