@@ -19,11 +19,19 @@ abstract: LATER
 
 Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019].
 
+@Kass2024-vy large number of packages
+
+many steps - integration is important
+
+@Griffith2024 for large-scale SDM
+
 ## Application description
 
 ### Component packages
 
 ### Software information
+
+Fauxcurrences @Osborne2022
 
 ### Integration with other packages
 
@@ -45,6 +53,6 @@ something with clustering?
 
 ### CS 3
 
-virtual species
+virtual species [@Leroy2016]
 
 ## References
