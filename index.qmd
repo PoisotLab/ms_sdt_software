@@ -17,7 +17,7 @@ abstract: LATER
 
 ## Introduction
 
-ref to Kaas 2024 on integration - interoperability is done through interfaces, show some examples
+Species Distribution Models (SDMs) are one of the most effective tool to predict the [@Elith2009]
 
 ## Application description
 
