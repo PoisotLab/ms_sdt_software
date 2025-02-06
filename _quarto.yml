@@ -3,6 +3,9 @@ project:
 
 manuscript:
   article: index.qmd
+  notebooks:
+    - notebook: appendix/virtualspecies.ipynb
+      title: Creating virtual species
 
 lang: en-CA
 

@@ -3,9 +3,6 @@ using CairoMakie
 using Distributions
 using Statistics
 
-place = SpeciesDistributionToolkit.gadm("CHE")
-extent = SpeciesDistributionToolkit.boundingbox(place)
-
 provider = RasterData(CHELSA2, BioClim)
 
 layers = [convert(SDMLayer{Float64}, SDMLayer(provider; layer=l, extent...)) for l in ["BIO1", "BIO12", "BIO3"]]
