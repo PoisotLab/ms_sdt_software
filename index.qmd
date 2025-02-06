@@ -27,7 +27,13 @@ many steps - integration is important
 
 ## Application description
 
+Overview @fig-components
+
 ### Component packages
+
+![Overview of the packages]
+
+  [Overview of the packages]: figures/SDT.png {#fig-components}
 
 ### Software information
 
