@@ -6,6 +6,8 @@ manuscript:
   notebooks:
     - notebook: appendix/virtualspecies.ipynb
       title: Creating virtual species
+    - notebook: appendix/sdm.ipynb
+      title: Training a SDM
 
 lang: en-CA
 
