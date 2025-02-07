@@ -51,7 +51,7 @@ In this section, we provide a series of case studies, meant to illustrate the us
 
 ### CS 1
 
-?
+{{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
 ### CS 2
 
@@ -60,5 +60,8 @@ something with clustering?
 ### CS 3
 
 virtual species [@Leroy2016]
+
+{{< embed appendix/virtualspecies.ipynb#fig-virtual-species >}}
+
 
 ## References

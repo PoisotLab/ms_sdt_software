@@ -1494,9 +1494,9 @@ weakdeps = ["ChainRulesCore"]
 
 [[deps.SpeciesDistributionToolkit]]
 deps = ["Distances", "Downloads", "Fauxcurrences", "GBIF", "GeoJSON", "MakieCore", "OccurrencesInterface", "Phylopic", "PolygonOps", "Reexport", "SDeMo", "SimpleSDMDatasets", "SimpleSDMLayers", "StatsBase", "TestItems", "ZipFile"]
-git-tree-sha1 = "1755b7c49de3f6072779c0f3b564bb14e0c3ef50"
+git-tree-sha1 = "5a87aa6e10eee5fa59a06a93f5ff2cfcd90a6bbc"
 uuid = "72b53823-5c0b-4575-ad0e-8e97227ad13b"
-version = "1.2.1"
+version = "1.2.2"
 
 [[deps.StableRNGs]]
 deps = ["Random"]

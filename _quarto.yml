@@ -4,10 +4,10 @@ project:
 manuscript:
   article: index.qmd
   notebooks:
-    - notebook: appendix/virtualspecies.ipynb
-      title: Creating virtual species
     - notebook: appendix/sdm.ipynb
-      title: Training a SDM
+      title: Supp. Mat. 1 - Species distribution model
+    - notebook: appendix/virtualspecies.ipynb
+      title: Supp. Mat. 2 - Creating virtual species
 
 lang: en-CA
 
