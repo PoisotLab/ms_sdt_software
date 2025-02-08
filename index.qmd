@@ -53,6 +53,8 @@ In this section, we provide a series of case studies, meant to illustrate the us
 
 landcover consensus
 
+{{< embed appendix/consensus.ipynb#fig-landcover-consensus >}}
+
 ### case study GBIF
 
 something with clustering?
