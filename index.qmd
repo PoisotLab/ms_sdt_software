@@ -17,11 +17,9 @@ abstract: LATER
 
 ## Introduction
 
-Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019].
+Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019]. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models. As @Kass2024-vy point out, this increase in the diveristy of packages (most of them in the **R** language) is a good thing, as it can accomodate multiple workflows, and contributes to the adoption of good practices in the field.
 
-@Kass2024-vy large number of packages
-
-many steps - integration is important
+Because the practice of species distribution modeling and analysis usually involve many different data types, tools that can provide an integrated environment are important: many existing packages have been designed independently, and therefore may suffer when it comes to interoperability. In this manuscript, we present **SpeciesDistributionToolkit** (abbreviated as **SDT**), a meta-package for the **Julia** programming language, offering an integrated environment for the retrieval, formatting, and interpretation of data relevant to the modeling of species distributions.
 
 @Griffith2024 for large-scale SDM
 
@@ -35,9 +33,13 @@ Overview @fig-components
 
   [Overview of the packages]: figures/SDT.png {#fig-components}
 
+Fauxcurrences @Osborne2022
+
 ### Software information
 
-Fauxcurrences @Osborne2022
+**SDT** uses the built-in **Julia** package manager to ensure that the version of all dependencies are kept up to date. Furthermore, we use strict semantic versioning: major versions correspond to no breaking changes in user-developped code, minor versions increase with additional functionalities, and patch releases cover minor bug fixes or documentation changes. All packages have a *CHANGELOG* file, which documents what changes are included in each release.
+
+This strict reliance on semantic versioning solves the issues of maintaining compatibility when new functionalities are added: all releases in the *v1.x.x* branch of **SDT** depend on somponent packages in their respective *v1.x.x* branch, and users can benefit from now functionalities without risking to break existing code. This behavior is extensively tested, both using unit tests, and through integration testing generated as part of the online documentation.
 
 ### Integration with other packages
 
