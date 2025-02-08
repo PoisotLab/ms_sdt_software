@@ -15,19 +15,19 @@ engine: julia
 abstract: LATER
 ---
 
-## Introduction
+# Introduction
 
-Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019]. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models. As @Kass2024-vy point out, this increase in the diveristy of packages (most of them in the **R** language) is a good thing, as it can accomodate multiple workflows, and contributes to the adoption of good practices in the field.
+Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both its design and reporting [@Zurell2020] and ultimate use and interpretation [@Araujo2019]. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models. As @Kass2024-vy point out, this increase in the diversity of packages (most of them in the **R** language) is a good thing, as it can accommodate multiple workflows, and contributes to the adoption of good practices in the field.
 
 Because the practice of species distribution modeling and analysis usually involve many different data types, tools that can provide an integrated environment are important: many existing packages have been designed independently, and therefore may suffer when it comes to interoperability. In this manuscript, we present **SpeciesDistributionToolkit** (abbreviated as **SDT**), a meta-package for the **Julia** programming language, offering an integrated environment for the retrieval, formatting, and interpretation of data relevant to the modeling of species distributions.
 
 @Griffith2024 for large-scale SDM
 
-## Application description
+# Application description
 
-Overview @fig-components
+...
 
-### Component packages
+## Component packages
 
 An overview of the **SDT** package is given in @fig-components. The project is organized as a "monorepo", in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. At **SDT** is registered in the **Julia** package repository, it can be installed with:
 
@@ -35,7 +35,7 @@ An overview of the **SDT** package is given in @fig-components. The project is o
 import Pkg; Pkg.add("SpeciesDistributionToolkit")
 ```
 
-When loading the **SDT** package with `using SpeciesDistributionToolkit`, all component packages are automatically and transparently loaded. Therefore, users do not need to know where a specific method or function resides to use it.
+When loading the **SDT** package with `using SpeciesDistributionToolkit`, all component packages are automatically and transparently loaded. Therefore, users do not need to know where a specific method or function resides to use it. In the next section, we discuss how this modular design ensure that we can grow the functionality of the toolkit over time, while maintaining strict backward compatibility *and* allowing full reproducibility of an analysis.
 
 ![Overview of the packages]
 
@@ -55,40 +55,42 @@ The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and
 
 **SDeMo**
 
-### Software information
+## Software information
 
 **SDT** uses the built-in **Julia** package manager to ensure that the version of all dependencies are kept up to date. Furthermore, we use strict semantic versioning: major versions correspond to no breaking changes in user-developped code, minor versions increase with additional functionalities, and patch releases cover minor bug fixes or documentation changes. All packages have a *CHANGELOG* file, which documents what changes are included in each release.
 
-This strict reliance on semantic versioning solves the issues of maintaining compatibility when new functionalities are added: all releases in the *v1.x.x* branch of **SDT** depend on somponent packages in their respective *v1.x.x* branch, and users can benefit from now functionalities without risking to break existing code. This behavior is extensively tested, both using unit tests, and through integration testing generated as part of the online documentation.
+This strict reliance on semantic versioning solves the issues of maintaining compatibility when new functionalities are added: all releases in the *v1.x.x* branch of **SDT** depend on component packages in their respective *v1.x.x* branch, and users can benefit from now functionalities without risking to break existing code. This behavior is extensively tested, both using unit tests, and through integration testing generated as part of the online documentation.
 
-### Integration with other packages
+@Kellner2025 reported that about 20% of failures to reproduce species distribution or abundance modeling code was related to package issues. The strict reliance on semantic versioning, alongside technical choices in the **Julia** package manager and repository, means that it is possible to specify the full version of all dependencies used in a project, which addresses this important obstacle to reproducibility.
+
+## Integration with other packages
 
 The **SDT** package benefits from close integration with other packages in the Julia universe. Notably, this includes **Makie** (and all related backends) for plotting and data visualisation, where usual plot types are overloaded for layer and occurrence data. Most data can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ**. Interfaces internal to Julia are also implemented whenever they make sense. Layers behave like arrays, are iterable, and broadcastable; occurrences collections are arrays and iterables. Beyong supporting external interfaces, **SDT** defines its own internally. Access to raster data is supported by a trait-based interface for **SimpleSDMDatasets**, and one of the component packages (**OccurrencesInterface** implements a minimalist interface to facilite the consumption of occurrence data.
 
 Internal use of other interfaces like StatsAPI
 
-## Illustrative case studies
+# Illustrative case studies
 
 In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The code for each of these case studies is available as fully independent Jupyter notebooks, forming the supplementary material of this article.
 
-### case study landscape
+## case study landscape
 
 landcover consensus
 
 {{< embed appendix/consensus.ipynb#fig-landcover-consensus >}}
 
-### case study GBIF
+## case study GBIF
 
 something with clustering?
 
-### case study SDM
+## case study SDM
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
-### case study virtual species
+## case study virtual species
 
 virtual species [@Leroy2016]
 
 {{< embed appendix/virtualspecies.ipynb#fig-virtual-species >}}
 
-## References
+# References
