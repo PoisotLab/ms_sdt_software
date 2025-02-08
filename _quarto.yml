@@ -1,6 +1,8 @@
 project:
   type: manuscript
 
+notebook-links: global
+
 manuscript:
   article: index.qmd
   notebooks:
@@ -24,19 +26,8 @@ format:
     monofont: TeX Gyre Termes
     sansfont: TeX Gyre Heros 
     formatting:
-      draft-format: true
-      author-sheet: true
-  typst:
-    citeproc: true
-    mainfont: "Palatino"
-    font-size: 12pt
-    papersize: us-letter
-    include-before-body:
-      - text: |
-        #set figure(placement: auto)
-    margin:
-      x: 3cm
-      y: 3cm
+      draft-format: false
+      author-sheet: false
 
 execute:
   freeze: true
