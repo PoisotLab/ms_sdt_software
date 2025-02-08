@@ -31,9 +31,9 @@ Overview @fig-components
 
 An overview of the **SDT** package is given in @fig-components. The project is organized as a "monorepo", in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. At **SDT** is registered in the **Julia** package repository, it can be installed with:
 
-~~~ julia
+``` julia
 import Pkg; Pkg.add("SpeciesDistributionToolkit")
-~~~
+```
 
 When loading the **SDT** package with `using SpeciesDistributionToolkit`, all component packages are automatically and transparently loaded. Therefore, users do not need to know where a specific method or function resides to use it.
 
@@ -51,7 +51,7 @@ When loading the **SDT** package with `using SpeciesDistributionToolkit`, all co
 
 **SimpleSDMLayers**
 
-The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and 
+The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and
 
 **SDeMo**
 
