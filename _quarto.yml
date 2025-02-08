@@ -4,10 +4,12 @@ project:
 manuscript:
   article: index.qmd
   notebooks:
+    - notebook: appendix/consensus.ipynb
+      title: Supp. Mat. XX - Landcover consensus
     - notebook: appendix/sdm.ipynb
-      title: Supp. Mat. 1 - Species distribution model
+      title: Supp. Mat. YY - Species distribution model
     - notebook: appendix/virtualspecies.ipynb
-      title: Supp. Mat. 2 - Creating virtual species
+      title: Supp. Mat. ZZ - Creating virtual species
 
 lang: en-CA
 
