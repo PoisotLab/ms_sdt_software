@@ -85,6 +85,10 @@ something with clustering?
 
 ## case study SDM
 
+get data from WC 2 and train rotation forest
+
+then clip by elevation range of observed data
+
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
 ## case study virtual species
