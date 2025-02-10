@@ -71,27 +71,25 @@ Internal use of other interfaces like StatsAPI
 
 # Illustrative case studies
 
-In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The code for each of these case studies is available as fully independent Jupyter notebooks, forming the supplementary material of this article.
-
-The example we use throughout is the distribution of *Akodon montensis* (Rodentia, family Cricetidae), and a host or orthohantaviruses [@Burgos2021; @Owen2010], in Paraguay. We will collect data on known occurrences from GBIF [@GBIF:TheGlobalBiodiversityInformationFacility2025],
+In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The code for each of these case studies is available as fully independent Jupyter notebooks, forming the supplementary material of this article. The example we use throughout is the distribution of *Akodon montensis* (Rodentia, family Cricetidae), and a host or orthohantaviruses [@Burgos2021; @Owen2010], in Paraguay. As the notebooks accompanying this article cover the full code required to run these examples, we will not present code snippets in the main text, and instead focus on explaining the high-level process.
 
 ## case study landscape
 
-landcover consensus
+[@Tuanmu2014]
 
 {{< embed appendix/consensus.ipynb#fig-landcover-consensus >}}
 
 ## case study GBIF
 
-something with clustering?
+[@GBIF:TheGlobalBiodiversityInformationFacility2025]
+
+[@Karger2017]
 
 {{< embed appendix/gbif.ipynb#fig-gbif-phylopic >}}
 
 ## case study SDM
 
-get data from WC 2 and train rotation forest
-
-then clip by elevation range of observed data
+ROT FOR
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
