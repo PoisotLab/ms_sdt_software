@@ -6,6 +6,8 @@ notebook-links: global
 manuscript:
   article: index.qmd
   notebooks:
+    - notebook: appendix/gbif.ipynb
+      title: Supp. Mat. XX - GBIF data
     - notebook: appendix/consensus.ipynb
       title: Supp. Mat. XX - Landcover consensus
     - notebook: appendix/sdm.ipynb

@@ -83,6 +83,8 @@ landcover consensus
 
 something with clustering?
 
+{{< embed appendix/gbif.ipynb#fig-gbif-phylopic >}}
+
 ## case study SDM
 
 get data from WC 2 and train rotation forest
