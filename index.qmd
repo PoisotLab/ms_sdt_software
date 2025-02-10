@@ -73,6 +73,8 @@ Internal use of other interfaces like StatsAPI
 
 In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The code for each of these case studies is available as fully independent Jupyter notebooks, forming the supplementary material of this article.
 
+The example we use throughout is the distribution of *Akodon montensis* (Rodentia, family Cricetidae), and a host or orthohantaviruses [@Burgos2021; @Owen2010], in Paraguay. we will collect data on known occurrences from GBIF
+
 ## case study landscape
 
 landcover consensus
