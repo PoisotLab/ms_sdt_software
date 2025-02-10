@@ -1,0 +1,25 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProcessOptions\relax
+
+\usepackage[letterpaper]{geometry}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{flushleft}%
+  \let \footnote \thanks
+    {\LARGE \bfseries \sffamily \@title \par}%
+    \vskip 1.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+  \end{flushleft}%
+  \par
+  \vskip 1.5em}
+\makeatother
