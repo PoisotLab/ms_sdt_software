@@ -89,7 +89,7 @@ In this section, we provide a series of case studies, meant to illustrate the us
 
 ## case study SDM
 
-ROT FOR
+BAGNALL REF
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
