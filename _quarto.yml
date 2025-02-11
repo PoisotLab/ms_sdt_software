@@ -24,7 +24,7 @@ format:
   docx: default
   typst:
     toc: false
-    mainfont: "TeX Gyre Pagella"
+    mainfont: "EB Garamond"
     fontsize: 10pt
     citeproc: true
     bibliographystyle: https://www.zotero.org/styles/methods-in-ecology-and-evolution
@@ -33,12 +33,10 @@ format:
       x: 1.8cm
       y: 2cm
     columns: 2
+    keep-typ: true
     include-before-body:
       - text: |
-          #show heading: set text(navy)
+          #show heading: set text(black)
 
 execute:
   freeze: true
-
-
-

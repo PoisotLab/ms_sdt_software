@@ -27,11 +27,13 @@ previous pub @Dansereau2021
 
 # Application description
 
-...
+**SpeciesDistributionToolkit** is released as a package for the **Julia** programming language, licensed under the open-source initiative approved MIT license. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
+
+  [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]: https://github.com/PoisotLab/SpeciesDistributionToolkit.jl
 
 ## Component packages
 
-An overview of the **SDT** package is given in @fig-components. The project is organized as a "monorepo", in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. At **SDT** is registered in the **Julia** package repository, it can be installed with:
+An overview of the **SDT** package is given in @fig-components. The project is organized as a "monorepo", in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. As **SDT** is registered in the **Julia** package repository, it can be installed with:
 
 ``` julia
 import Pkg; Pkg.add("SpeciesDistributionToolkit")
@@ -39,9 +41,9 @@ import Pkg; Pkg.add("SpeciesDistributionToolkit")
 
 When loading the **SDT** package with `using SpeciesDistributionToolkit`, all component packages are automatically and transparently loaded. Therefore, users do not need to know where a specific method or function resides to use it. In the next section, we discuss how this modular design ensure that we can grow the functionality of the toolkit over time, while maintaining strict backward compatibility *and* allowing full reproducibility of an analysis.
 
-![Overview of the packages]
+![Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships.]
 
-  [Overview of the packages]: figures/SDT.png {#fig-components}
+  [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships.]: figures/SDT.png {#fig-components}
 
 **GBIF**
 
@@ -75,7 +77,6 @@ Internal use of other interfaces like **StatsAPI** in **SDeMo**
 
 one of the component packages (**OccurrencesInterface**) implements a minimalist interface to facilite the consumption of occurrence data.
 
-
 # Illustrative case studies
 
 In this section, we provide a series of case studies, meant to illustrate the use of the package. The on-line documentation offers longer tutorials, as well as a series of how-to vignettes to illustrate the full scope of what the package allows. The code for each of these case studies is available as fully independent Jupyter notebooks, forming the supplementary material of this article. The example we use throughout is the distribution of *Akodon montensis* (Rodentia, family Cricetidae), and a host or orthohantaviruses [@Burgos2021; @Owen2010], in Paraguay. As the notebooks accompanying this article cover the full code required to run these examples, we do not present code snippets in the main text, and instead focus on explaining which component packages are used in each example.
@@ -94,7 +95,7 @@ In this case study, we retrieve the land cover data from @Tuanmu2014, clip them 
 
 {{< embed appendix/gbif.ipynb#fig-gbif-phylopic >}}
 
-In practice, although the data are retrieved using  the **GBIF** package, they are used internally by **SDT** through the **OccurrencesInterface** package. This package defines a small convention to handle georeferenced occurrence data, and allows to transparently integrate additional occurrence sources. By defining five methods for a custom data type, users can plug-in any occurrence data source and enjoy full compatibility with the entire **SDT** functionalities.
+In practice, although the data are retrieved using the **GBIF** package, they are used internally by **SDT** through the **OccurrencesInterface** package. This package defines a small convention to handle georeferenced occurrence data, and allows to transparently integrate additional occurrence sources. By defining five methods for a custom data type, users can plug-in any occurrence data source and enjoy full compatibility with the entire **SDT** functionalities.
 
 ## Training a species distribution model
 
