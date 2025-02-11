@@ -45,6 +45,8 @@ When loading the **SDT** package with `using SpeciesDistributionToolkit`, all co
 
   [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships.]: figures/SDT.png {#fig-components}
 
+PA routines from @Barbet-Massin2012 in **SDT**
+
 **GBIF**
 
 **SimpleSDMDatasets**
@@ -57,7 +59,11 @@ When loading the **SDT** package with `using SpeciesDistributionToolkit`, all co
 
 The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and
 
-**SDeMo**
+The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling,
+
+Shap mapping @Wadoux2023 and @Mesgaran2014
+
+regular @Elith2005 and inflated @Zurell2012 partial responses including on a map
 
 ## Software information
 
@@ -100,8 +106,6 @@ In practice, although the data are retrieved using the **GBIF** package, they ar
 ## Training a species distribution model
 
 [@Bagnall2018]
-
-PA routines from @Barbet-Massin2012
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
