@@ -93,6 +93,8 @@ In practice, although the data are retrieved using  the **GBIF** package, they a
 
 [@Bagnall2018]
 
+PA routines from @Barbet-Massin2012
+
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
 ## Generating the distribution of a virtual species
