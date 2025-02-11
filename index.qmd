@@ -27,7 +27,7 @@ previous pub @Dansereau2021
 
 # Application description
 
-**SpeciesDistributionToolkit** is released as a package for the **Julia** programming language \[@Bezanson2017\], licensed under the open-source initiative approved MIT license. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
+**SpeciesDistributionToolkit** is released as a package for the **Julia** programming language [@Bezanson2017], licensed under the open-source initiative approved MIT license. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
 
   [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]: https://github.com/PoisotLab/SpeciesDistributionToolkit.jl
 

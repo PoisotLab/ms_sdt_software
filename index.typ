@@ -327,7 +327,7 @@ Griffith et al. (2024) for large-scale SDM
 
 = Application description
 <application-description>
-#strong[SpeciesDistributionToolkit] is released as a package for the #strong[Julia] programming language, licensed under the open-source initiative approved MIT license. The package is registered in the #strong[Julia] package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at #link("https://github.com/PoisotLab/SpeciesDistributionToolkit.jl")[`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`];. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
+#strong[SpeciesDistributionToolkit] is released as a package for the #strong[Julia] programming language (Bezanson et al. 2017), licensed under the open-source initiative approved MIT license. The package is registered in the #strong[Julia] package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at #link("https://github.com/PoisotLab/SpeciesDistributionToolkit.jl")[`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`];. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
 
 == Component packages
 <component-packages>
@@ -352,7 +352,9 @@ supplement: "Figure",
 <fig-components>
 
 
-PA routines from Barbet-Massin et al. (2012) in #strong[SDT]
+The #strong[SDT] package primarily provides integration between the other packages, through the mechanism of method overloading, allowing to efficiently join packages together (Roesch et al. 2023).
+
+PA routines from Barbet-Massin et al. (2012) in
 
 #strong[GBIF]
 
@@ -364,9 +366,9 @@ PA routines from Barbet-Massin et al. (2012) in #strong[SDT]
 
 #strong[SimpleSDMLayers]
 
-The #strong[Fauxcurrences] packages is inspired by the work of Osborne et al. (2022), and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conserva
+The #strong[Fauxcurrences] packages is inspired by the work of Osborne et al. (2022), and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conservation.
 
-The #strong[SDeMo] package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular (Elith et al. 2005) and inflated (Zurell, Elith, and Schröder 2012) partial responses, as well as the calculation and mapping of Shapley values (Wadoux, Saby, and Martin 2023; Mesgaran, Cousens, and Webber 2014), and the generation of counterfactuals.
+The #strong[SDeMo] package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular (Elith et al. 2005) and inflated (Zurell, Elith, and Schröder 2012) partial responses, as well as the calculation and mapping of Shapley values (Wadoux, Saby, and Martin 2023; Mesgaran, Cousens, and Webber 2014), and the generation of counterfactuals Karimi et al. (2019).
 
 == Software information
 <software-information>
@@ -486,6 +488,10 @@ Barbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried
 
 ] <ref-Barbet-Massin2012>
 #block[
+Bezanson, Jeff, Alan Edelman, Stefan Karpinski, and Viral B Shah. 2017. “Julia: A Fresh Approach to Numerical Computing.” #emph[SIAM Review. Society for Industrial and Applied Mathematics] 59 (January): 65–98. #link("https://doi.org/10.1137/141000671");.
+
+] <ref-Bezanson2017>
+#block[
 Burgos, E F, M V Vadell, C M Bellomo, V P Martinez, O D Salomon, and I E Gómez Villafañe. 2021. “First Evidence of Akodon-Borne Orthohantavirus in Northeastern Argentina.” #emph[EcoHealth] 18 (December): 429–39. #link("https://doi.org/10.1007/s10393-021-01564-6");.
 
 ] <ref-Burgos2021>
@@ -514,6 +520,10 @@ Karger, Dirk Nikolaus, Olaf Conrad, Jürgen Böhner, Tobias Kawohl, Holger Kreft
 
 ] <ref-Karger2017>
 #block[
+Karimi, Amir-Hossein, Gilles Barthe, Borja Balle, and Isabel Valera. 2019. “Model-Agnostic Counterfactual Explanations for Consequential Decisions.” #emph[arXiv \[Cs.LG\]];, May.
+
+] <ref-Karimi2019>
+#block[
 Kass, Jamie M, Adam B Smith, Dan L Warren, Sergio Vignali, Sylvain Schmitt, Matthew E Aiello-Lammens, Eduardo Arlé, et al. 2024. “Achieving Higher Standards in Species Distribution Modeling by Leveraging the Diversity of Available Software.” #emph[Ecography];, November. #link("https://doi.org/10.1111/ecog.07346");.
 
 ] <ref-Kass2024-vy>
@@ -538,9 +548,17 @@ Owen, Robert D, Douglas G Goodin, David E Koch, Yong-Kyu Chu, and Colleen B Jons
 
 ] <ref-Owen2010>
 #block[
+Roesch, Elisabeth, Joe G Greener, Adam L MacLean, Huda Nassar, Christopher Rackauckas, Timothy E Holy, and Michael P H Stumpf. 2023. “Julia for Biologists.” #emph[Nature Methods] 20 (May): 655–64. #link("https://doi.org/10.1038/s41592-023-01832-z");.
+
+] <ref-Roesch2023>
+#block[
 Tuanmu, Mao-Ning, and Walter Jetz. 2014. “A Global 1‐km Consensus Land‐cover Product for Biodiversity and Ecosystem Modelling: Consensus Land Cover.” #emph[Global Ecology and Biogeography: A Journal of Macroecology] 23 (September): 1031–45. #link("https://doi.org/10.1111/geb.12182");.
 
 ] <ref-Tuanmu2014>
+#block[
+Van Looveren, Arnaud, and Janis Klaise. 2019. “Interpretable Counterfactual Explanations Guided by Prototypes.” #emph[arXiv \[Cs.LG\]];, July.
+
+] <ref-VanLooveren2019>
 #block[
 Wadoux, Alexandre M J-C, Nicolas P A Saby, and Manuel P Martin. 2023. “Shapley Values Reveal the Drivers of Soil Organic Carbon Stock Prediction.” #emph[SOIL] 9 (January): 21–38. #link("https://doi.org/10.5194/soil-9-21-2023");.
 
