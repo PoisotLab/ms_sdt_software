@@ -313,7 +313,7 @@
   cols: 2,
   doc,
 )
-#show heading: set text(gray)
+#show heading: set text(black)
 
 = Introduction
 <introduction>
@@ -352,6 +352,8 @@ supplement: "Figure",
 <fig-components>
 
 
+PA routines from Barbet-Massin et al. (2012) in #strong[SDT]
+
 #strong[GBIF]
 
 #strong[SimpleSDMDatasets]
@@ -362,9 +364,9 @@ supplement: "Figure",
 
 #strong[SimpleSDMLayers]
 
-The #strong[Fauxcurrences] packages is inspired by the work of Osborne et al. (2022), and
+The #strong[Fauxcurrences] packages is inspired by the work of Osborne et al. (2022), and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conserva
 
-#strong[SDeMo]
+The #strong[SDeMo] package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular (Elith et al. 2005) and inflated (Zurell, Elith, and Schröder 2012) partial responses, as well as the calculation and mapping of Shapley values (Wadoux, Saby, and Martin 2023; Mesgaran, Cousens, and Webber 2014), and the generation of counterfactuals.
 
 == Software information
 <software-information>
@@ -434,8 +436,6 @@ In practice, although the data are retrieved using the #strong[GBIF] package, th
 <training-a-species-distribution-model>
 (Bagnall et al. 2018)
 
-PA routines from Barbet-Massin et al. (2012)
-
 #block[
 #figure([
 #box(image("index_files/figure-typst/appendix-sdm-fig-sdm-output-output-1.png"))
@@ -494,6 +494,10 @@ Dansereau, Gabriel, and Timothée Poisot. 2021. “SimpleSDMLayers.jl and GBIF.j
 
 ] <ref-Dansereau2021>
 #block[
+Elith, Jane, Simon Ferrier, Falk Huettmann, and John Leathwick. 2005. “The Evaluation Strip: A New and Robust Method for Plotting Predicted Responses from Species Distribution Models.” #emph[Ecological Modelling] 186 (August): 280–89. #link("https://doi.org/10.1016/j.ecolmodel.2004.12.007");.
+
+] <ref-Elith2005>
+#block[
 Elith, Jane, and John R Leathwick. 2009. “Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.” #emph[Annual Review of Ecology, Evolution, and Systematics] 40 (December): 677–97. #link("https://doi.org/10.1146/annurev.ecolsys.110308.120159");.
 
 ] <ref-Elith2009>
@@ -522,6 +526,10 @@ Leroy, Boris, Christine N Meynard, Céline Bellard, and Franck Courchamp. 2016. 
 
 ] <ref-Leroy2016>
 #block[
+Mesgaran, Mohsen B, Roger D Cousens, and Bruce L Webber. 2014. “Here Be Dragons: A Tool for Quantifying Novelty Due to Covariate Range and Correlation Change When Projecting Species Distribution Models.” #emph[Diversity & Distributions] 20 (October): 1147–59. #link("https://doi.org/10.1111/ddi.12209");.
+
+] <ref-Mesgaran2014>
+#block[
 Osborne, Owen G, Henry G Fell, Hannah Atkins, Jan van Tol, Daniel Phillips, Leonel Herrera-Alsina, Poppy Mynard, et al. 2022. “Fauxcurrence: Simulating Multi‐species Occurrences for Null Models in Species Distribution Modelling and Biogeography.” #emph[Ecography] 2022 (July): e05880. #link("https://doi.org/10.1111/ecog.05880");.
 
 ] <ref-Osborne2022>
@@ -533,6 +541,14 @@ Owen, Robert D, Douglas G Goodin, David E Koch, Yong-Kyu Chu, and Colleen B Jons
 Tuanmu, Mao-Ning, and Walter Jetz. 2014. “A Global 1‐km Consensus Land‐cover Product for Biodiversity and Ecosystem Modelling: Consensus Land Cover.” #emph[Global Ecology and Biogeography: A Journal of Macroecology] 23 (September): 1031–45. #link("https://doi.org/10.1111/geb.12182");.
 
 ] <ref-Tuanmu2014>
+#block[
+Wadoux, Alexandre M J-C, Nicolas P A Saby, and Manuel P Martin. 2023. “Shapley Values Reveal the Drivers of Soil Organic Carbon Stock Prediction.” #emph[SOIL] 9 (January): 21–38. #link("https://doi.org/10.5194/soil-9-21-2023");.
+
+] <ref-Wadoux2023>
+#block[
+Zurell, Damaris, Jane Elith, and Boris Schröder. 2012. “Predicting to New Environments: Tools for Visualizing Model Behaviour and Impacts on Mapped Distributions.” #emph[Diversity & Distributions] 18 (June): 628–34. #link("https://doi.org/10.1111/j.1472-4642.2012.00887.x");.
+
+] <ref-Zurell2012>
 #block[
 Zurell, Damaris, Janet Franklin, Christian König, Phil J Bouchet, Carsten F Dormann, Jane Elith, Guillermo Fandos, et al. 2020. “A Standard Protocol for Reporting Species Distribution Models.” #emph[Ecography] 43 (September): 1261–77. #link("https://doi.org/10.1111/ecog.04960");.
 

@@ -27,7 +27,7 @@ previous pub @Dansereau2021
 
 # Application description
 
-**SpeciesDistributionToolkit** is released as a package for the **Julia** programming language, licensed under the open-source initiative approved MIT license. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
+**SpeciesDistributionToolkit** is released as a package for the **Julia** programming language \[@Bezanson2017\], licensed under the open-source initiative approved MIT license. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.
 
   [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]: https://github.com/PoisotLab/SpeciesDistributionToolkit.jl
 
@@ -45,7 +45,9 @@ When loading the **SDT** package with `using SpeciesDistributionToolkit`, all co
 
   [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships.]: figures/SDT.png {#fig-components}
 
-PA routines from @Barbet-Massin2012 in **SDT**
+The **SDT** package primarily provides integration between the other packages, through the mechanism of method overloading, allowing to efficiently join packages together [@Roesch2023].
+
+PA routines from @Barbet-Massin2012 in
 
 **GBIF**
 
@@ -57,13 +59,9 @@ PA routines from @Barbet-Massin2012 in **SDT**
 
 **SimpleSDMLayers**
 
-The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and
+The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conservation.
 
-The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling,
-
-Shap mapping @Wadoux2023 and @Mesgaran2014
-
-regular @Elith2005 and inflated @Zurell2012 partial responses including on a map
+The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular [@Elith2005] and inflated [@Zurell2012] partial responses, as well as the calculation and mapping of Shapley values [@Wadoux2023; @Mesgaran2014], and the generation of counterfactuals [@VanLooveren2019, @Karimi2019].
 
 ## Software information
 
