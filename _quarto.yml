@@ -22,14 +22,20 @@ format:
     comments:
       hypothesis: true
   docx: default
-  preprint-pdf:
-    csl: https://www.zotero.org/styles/methods-in-ecology-and-evolution
-    mainfont: TeX Gyre Pagella Math
-    monofont: TeX Gyre Termes
-    sansfont: TeX Gyre Heros 
-    formatting:
-      draft-format: false
-      author-sheet: false
+  typst:
+    toc: false
+    mainfont: "TeX Gyre Pagella"
+    fontsize: 10pt
+    citeproc: true
+    bibliographystyle: https://www.zotero.org/styles/methods-in-ecology-and-evolution
+    papersize: us-letter
+    margin:
+      x: 1.8cm
+      y: 2cm
+    columns: 2
+    include-before-body:
+      - text: |
+          #show heading: set text(navy)
 
 execute:
   freeze: true
