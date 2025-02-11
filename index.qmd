@@ -21,6 +21,8 @@ Species Distribution Models (SDMs) are one of the most effective predictive appr
 
 Because the practice of species distribution modeling and analysis usually involve many different data types, tools that can provide an integrated environment are important: many existing packages have been designed independently, and therefore may suffer when it comes to interoperability. In this manuscript, we present **SpeciesDistributionToolkit** (abbreviated as **SDT**), a meta-package for the **Julia** programming language, offering an integrated environment for the retrieval, formatting, and interpretation of data relevant to the modeling of species distributions.
 
+previous pub @Dansereau2021
+
 @Griffith2024 for large-scale SDM
 
 # Application description

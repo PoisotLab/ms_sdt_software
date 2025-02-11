@@ -241,8 +241,10 @@ Figure&nbsp;1: Overview of the packages
 </section>
 <section id="integration-with-other-packages" class="level2">
 <h2 class="anchored" data-anchor-id="integration-with-other-packages">Integration with other packages</h2>
-<p>The <strong>SDT</strong> package benefits from close integration with other packages in the Julia universe. Notably, this includes <strong>Makie</strong> (and all related backends) for plotting and data visualisation, where usual plot types are overloaded for layer and occurrence data. Most data can be exported using the <strong>Tables</strong> interface, which allows data to be consumed by other packages like <strong>DataFrames</strong> and <strong>MLJ</strong>. Interfaces internal to Julia are also implemented whenever they make sense. Layers behave like arrays, are iterable, and broadcastable; occurrences collections are arrays and iterables. Beyong supporting external interfaces, <strong>SDT</strong> defines its own internally. Access to raster data is supported by a trait-based interface for <strong>SimpleSDMDatasets</strong>, and one of the component packages (<strong>OccurrencesInterface</strong> implements a minimalist interface to facilite the consumption of occurrence data.</p>
-<p>Internal use of other interfaces like StatsAPI</p>
+<p>The <strong>SDT</strong> package benefits from close integration with other packages in the Julia universe. Notably, this includes <strong>Makie</strong> (and all related backends) for plotting and data visualisation, where usual plot types are overloaded for layer and occurrence data. Most data can be exported using the <strong>Tables</strong> interface, which allows data to be consumed by other packages like <strong>DataFrames</strong> and <strong>MLJ</strong>. Interfaces internal to Julia are also implemented whenever they make sense. Layers behave like arrays, are iterable, and broadcastable; occurrences collections are arrays and iterables.</p>
+<p>Beyond supporting external interfaces, <strong>SDT</strong> defines its own internally. Access to raster data is supported by a trait-based interface for <strong>SimpleSDMDatasets</strong>.</p>
+<p>Internal use of other interfaces like <strong>StatsAPI</strong> in <strong>SDeMo</strong></p>
+<p>one of the component packages (<strong>OccurrencesInterface</strong>) implements a minimalist interface to facilite the consumption of occurrence data.</p>
 </section>
 </section>
 <section id="illustrative-case-studies" class="level1">
@@ -289,6 +291,7 @@ Figure&nbsp;3: yeah
 <section id="training-a-species-distribution-model" class="level2">
 <h2 class="anchored" data-anchor-id="training-a-species-distribution-model">Training a species distribution model</h2>
 <p><span class="citation" data-cites="Bagnall2018">(<a href="#ref-Bagnall2018" role="doc-biblioref">Bagnall et al. 2018</a>)</span></p>
+<p>PA routines from <span class="citation" data-cites="Barbet-Massin2012">Barbet-Massin et al. (<a href="#ref-Barbet-Massin2012" role="doc-biblioref">2012</a>)</span></p>
 <div class="quarto-embed-nb-cell">
 <div id="cell-fig-sdm-output" class="cell" data-execution_count="200">
 <div id="fig-sdm-output" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
@@ -334,6 +337,9 @@ Araújo, Miguel B, Robert P Anderson, A Márcia Barbosa, Colin M Beale, Carsten 
 </div>
 <div id="ref-Bagnall2018" class="csl-entry" role="listitem">
 Bagnall, A, M Flynn, J Large, J Line, A Bostrom, and G Cawley. 2018. <span>“Is Rotation Forest the Best Classifier for Problems with Continuous Features?”</span> <em>arXiv [Cs.LG]</em>, September.
+</div>
+<div id="ref-Barbet-Massin2012" class="csl-entry" role="listitem">
+Barbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried Thuiller. 2012. <span>“Selecting Pseudo‐absences for Species Distribution Models: How, Where and How Many?: How to Use Pseudo-Absences in Niche Modelling?”</span> <em>Methods in Ecology and Evolution</em> 3 (April): 327–38. <a href="https://doi.org/10.1111/j.2041-210x.2011.00172.x">https://doi.org/10.1111/j.2041-210x.2011.00172.x</a>.
 </div>
 <div id="ref-Burgos2021" class="csl-entry" role="listitem">
 Burgos, E F, M V Vadell, C M Bellomo, V P Martinez, O D Salomon, and I E Gómez Villafañe. 2021. <span>“First Evidence of Akodon-Borne Orthohantavirus in Northeastern Argentina.”</span> <em>EcoHealth</em> 18 (December): 429–39. <a href="https://doi.org/10.1007/s10393-021-01564-6">https://doi.org/10.1007/s10393-021-01564-6</a>.
