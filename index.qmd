@@ -103,8 +103,12 @@ The full notebook (Supp. Mat. 3) has additional information on routines for vari
 
 ## Distribution of a virtual species
 
-[@Leroy2016]
-
-The results are presented in @fig-virtual-species.
+In the final case study (Supp. Mat. 4), we simulate a virtual distribution [@Hirzel2001], using a species with a logistic response to each environmental covariate [@Leroy2016], and a prevalence similar to the one predicted in @fig-sdm-output. The results are presented in @fig-virtual-species.
 
 {{< embed appendix/virtualspecies.ipynb#fig-virtual-species >}}
+
+Because the layers used by **SDT** are broadcastable, we can rapidly apply a function (here, the logistic response to the environmental covariate) to each layer, and then multiply the suitabilities together. The last step is facilitated by the fact that most basic arithmetic operations are defined for layers, allowing for example to add, multiply, substract, and divide them by one another.
+
+# Conclusion
+
+We have presented
