@@ -35,7 +35,17 @@ format:
     columns: 2
     include-before-body:
       - text: |
-          #show heading: set text(black)
+          #show heading.where(level: 1): set text(rgb("#114f54"))
+          #show heading.where(level: 2): set text(rgb("#2e5385"))
+          #show heading.where(level: 1): it => block(width: 100%)[
+            #smallcaps(it.body)
+          ]
+          #show heading.where(level: 2): it => text(
+            style: "italic",
+            weight: "regular",
+            size: 11pt,
+            it.body + [: ]
+          )
 
 execute:
   freeze: true
