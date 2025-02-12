@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -86,7 +52,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cf74682202b67830e1f5a410130aea57.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-89f6871985acce2ad1112f5d88099143.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -106,17 +72,25 @@ div.csl-indent {
 <meta name="citation_author" content="Timothée Poisot">
 <meta name="citation_language" content="en-CA">
 <meta name="citation_reference" content="citation_title=A global 1‐km consensus land‐cover product for biodiversity and ecosystem modelling: Consensus land cover;,citation_author=Mao-Ning Tuanmu;,citation_author=Walter Jetz;,citation_publication_date=2014-09;,citation_cover_date=2014-09;,citation_year=2014;,citation_doi=10.1111/geb.12182;,citation_volume=23;,citation_journal_title=Global ecology and biogeography: a journal of macroecology;,citation_publisher=Wiley;">
+<meta name="citation_reference" content="citation_title=Model-agnostic counterfactual explanations for consequential decisions;,citation_author=Amir-Hossein Karimi;,citation_author=Gilles Barthe;,citation_author=Borja Balle;,citation_author=Isabel Valera;,citation_publication_date=2019-05-27;,citation_cover_date=2019-05-27;,citation_year=2019;,citation_journal_title=arXiv [cs.LG];">
+<meta name="citation_reference" content="citation_title=Interpretable counterfactual explanations guided by prototypes;,citation_author=Arnaud Van Looveren;,citation_author=Janis Klaise;,citation_publication_date=2019-07-03;,citation_cover_date=2019-07-03;,citation_year=2019;,citation_journal_title=arXiv [cs.LG];">
 <meta name="citation_reference" content="citation_title=Standards for distribution models in biodiversity assessments;,citation_author=Miguel B Araújo;,citation_author=Robert P Anderson;,citation_author=A Márcia Barbosa;,citation_author=Colin M Beale;,citation_author=Carsten F Dormann;,citation_author=Regan Early;,citation_author=Raquel A Garcia;,citation_author=Antoine Guisan;,citation_author=Luigi Maiorano;,citation_author=Babak Naimi;,citation_author=Robert B O’Hara;,citation_author=Niklaus E Zimmermann;,citation_author=Carsten Rahbek;,citation_publication_date=2019-01;,citation_cover_date=2019-01;,citation_year=2019;,citation_doi=10.1126/sciadv.aat4858;,citation_volume=5;,citation_journal_title=Science advances;,citation_publisher=American Association for the Advancement of Science (AAAS);">
 <meta name="citation_reference" content="citation_title=Fauxcurrence: Simulating multi‐species occurrences for null models in species distribution modelling and biogeography;,citation_author=Owen G Osborne;,citation_author=Henry G Fell;,citation_author=Hannah Atkins;,citation_author=Jan Tol;,citation_author=Daniel Phillips;,citation_author=Leonel Herrera-Alsina;,citation_author=Poppy Mynard;,citation_author=Greta Bocedi;,citation_author=Cécile Gubry-Rangin;,citation_author=Lesley T Lancaster;,citation_author=Simon Creer;,citation_author=Meis Nangoy;,citation_author=Fahri Fahri;,citation_author=Pungki Lupiyaningdyah;,citation_author=I M Sudiana;,citation_author=Berry Juliandi;,citation_author=Justin M J Travis;,citation_author=Alexander S T Papadopulos;,citation_author=Adam C Algar;,citation_publication_date=2022-07-01;,citation_cover_date=2022-07-01;,citation_year=2022;,citation_doi=10.1111/ecog.05880;,citation_volume=2022;,citation_journal_title=Ecography;,citation_publisher=Wiley;">
+<meta name="citation_reference" content="citation_title=Shapley values reveal the drivers of soil organic carbon stock prediction;,citation_author=Alexandre M J-C Wadoux;,citation_author=Nicolas P A Saby;,citation_author=Manuel P Martin;,citation_publication_date=2023-01-11;,citation_cover_date=2023-01-11;,citation_year=2023;,citation_doi=10.5194/soil-9-21-2023;,citation_volume=9;,citation_journal_title=SOIL;,citation_publisher=Copernicus GmbH;">
 <meta name="citation_reference" content="citation_title=Selecting pseudo‐absences for species distribution models: How, where and how many?: How to use pseudo-absences in niche modelling?;,citation_author=Morgane Barbet-Massin;,citation_author=Frédéric Jiguet;,citation_author=Cécile Hélène Albert;,citation_author=Wilfried Thuiller;,citation_publication_date=2012-04;,citation_cover_date=2012-04;,citation_year=2012;,citation_doi=10.1111/j.2041-210x.2011.00172.x;,citation_volume=3;,citation_journal_title=Methods in ecology and evolution;,citation_publisher=Wiley;">
 <meta name="citation_reference" content="citation_title=Species distribution models: Ecological explanation and prediction across space and time;,citation_author=Jane Elith;,citation_author=John R Leathwick;,citation_publication_date=2009-12-01;,citation_cover_date=2009-12-01;,citation_year=2009;,citation_doi=10.1146/annurev.ecolsys.110308.120159;,citation_volume=40;,citation_journal_title=Annual review of ecology, evolution, and systematics;,citation_publisher=Annual Reviews;">
 <meta name="citation_reference" content="citation_title=Virtualspecies, an R package to generate virtual species distributions;,citation_author=Boris Leroy;,citation_author=Christine N Meynard;,citation_author=Céline Bellard;,citation_author=Franck Courchamp;,citation_publication_date=2016-06-01;,citation_cover_date=2016-06-01;,citation_year=2016;,citation_doi=10.1111/ecog.01388;,citation_volume=39;,citation_journal_title=Ecography;,citation_publisher=Wiley;">
 <meta name="citation_reference" content="citation_title=&amp;amp;amp;lt;i&amp;gt;What is GBIF?&amp;lt;/i&amp;gt;;,citation_author=GBIF: The Global Biodiversity Information Facility;,citation_publication_date=2025;,citation_cover_date=2025;,citation_year=2025;">
 <meta name="citation_reference" content="citation_title=Is rotation forest the best classifier for problems with continuous features?;,citation_author=A Bagnall;,citation_author=M Flynn;,citation_author=J Large;,citation_author=J Line;,citation_author=A Bostrom;,citation_author=G Cawley;,citation_publication_date=2018-09-18;,citation_cover_date=2018-09-18;,citation_year=2018;,citation_journal_title=arXiv [cs.LG];">
 <meta name="citation_reference" content="citation_title=Achieving higher standards in species distribution modeling by leveraging the diversity of available software;,citation_author=Jamie M Kass;,citation_author=Adam B Smith;,citation_author=Dan L Warren;,citation_author=Sergio Vignali;,citation_author=Sylvain Schmitt;,citation_author=Matthew E Aiello-Lammens;,citation_author=Eduardo Arlé;,citation_author=Ana Márcia Barbosa;,citation_author=Olivier Broennimann;,citation_author=Marlon E Cobos;,citation_author=Maya Guéguen;,citation_author=Antoine Guisan;,citation_author=Cory Merow;,citation_author=Babak Naimi;,citation_author=Michael P Nobis;,citation_author=Ian Ondo;,citation_author=Luis Osorio-Olvera;,citation_author=Hannah L Owens;,citation_author=Gonzalo E Pinilla-Buitrago;,citation_author=Andrea Sánchez-Tapia;,citation_author=Wilfried Thuiller;,citation_author=Roozbeh Valavi;,citation_author=Santiago José Elías Velazco;,citation_author=Alexander Zizka;,citation_author=Damaris Zurell;,citation_publication_date=2024-11-19;,citation_cover_date=2024-11-19;,citation_year=2024;,citation_doi=10.1111/ecog.07346;,citation_journal_title=Ecography;,citation_publisher=Wiley;">
+<meta name="citation_reference" content="citation_title=Predicting to new environments: Tools for visualizing model behaviour and impacts on mapped distributions;,citation_author=Damaris Zurell;,citation_author=Jane Elith;,citation_author=Boris Schröder;,citation_publication_date=2012-06-01;,citation_cover_date=2012-06-01;,citation_year=2012;,citation_doi=10.1111/j.1472-4642.2012.00887.x;,citation_volume=18;,citation_journal_title=Diversity &amp;amp;amp; distributions;,citation_publisher=Wiley;">
 <meta name="citation_reference" content="citation_title=A standard protocol for reporting species distribution models;,citation_author=Damaris Zurell;,citation_author=Janet Franklin;,citation_author=Christian König;,citation_author=Phil J Bouchet;,citation_author=Carsten F Dormann;,citation_author=Jane Elith;,citation_author=Guillermo Fandos;,citation_author=Xiao Feng;,citation_author=Gurutzeta Guillera-Arroita;,citation_author=Antoine Guisan;,citation_author=José J Lahoz-Monfort;,citation_author=Pedro J Leitão;,citation_author=Daniel S Park;,citation_author=A Townsend Peterson;,citation_author=Giovanni Rapacciuolo;,citation_author=Dirk R Schmatz;,citation_author=Boris Schröder;,citation_author=Josep M Serra-Diaz;,citation_author=Wilfried Thuiller;,citation_author=Katherine L Yates;,citation_author=Niklaus E Zimmermann;,citation_author=Cory Merow;,citation_publication_date=2020-09-01;,citation_cover_date=2020-09-01;,citation_year=2020;,citation_doi=10.1111/ecog.04960;,citation_volume=43;,citation_journal_title=Ecography;,citation_publisher=John Wiley &amp;amp;amp; Sons, Ltd;">
 <meta name="citation_reference" content="citation_title=SimpleSDMLayers.jl and GBIF.jl: A framework for species distribution modeling in julia;,citation_author=Gabriel Dansereau;,citation_author=Timothée Poisot;,citation_publication_date=2021-01-27;,citation_cover_date=2021-01-27;,citation_year=2021;,citation_doi=10.21105/joss.02872;,citation_volume=6;,citation_journal_title=Journal of open source software;,citation_publisher=The Open Journal;">
+<meta name="citation_reference" content="citation_title=Here be dragons: A tool for quantifying novelty due to covariate range and correlation change when projecting species distribution models;,citation_author=Mohsen B Mesgaran;,citation_author=Roger D Cousens;,citation_author=Bruce L Webber;,citation_publication_date=2014-10-01;,citation_cover_date=2014-10-01;,citation_year=2014;,citation_doi=10.1111/ddi.12209;,citation_volume=20;,citation_journal_title=Diversity &amp;amp;amp; distributions;,citation_publisher=Wiley;">
 <meta name="citation_reference" content="citation_title=BON in a box: An open and collaborative platform for biodiversity monitoring, indicator calculation, and reporting;,citation_author=Jory Griffith;,citation_author=Jean-Michel Lord;,citation_author=Michael D Catchen;,citation_author=Maria Isabel Arce-Plata;,citation_author=Manuel Fernandez Galvez Bohorquez;,citation_author=Matusan Chandramohan;,citation_author=María Camilla Diaz-Corzo;,citation_author=Dominique Gravel;,citation_author=Luis Fernando Urbina Gonzalez;,citation_author=César Gutiérrez;,citation_author=Isabelle Helfenstein;,citation_author=Sean Hoban;,citation_author=Jamie M Kass;,citation_author=Guillaume Laroque;,citation_author=Linda Laikre;,citation_author=Deborah Leigh;,citation_author=Brian Leung;,citation_author=Alicia Mastretta-Yanes;,citation_author=Katie Millette;,citation_author=Diego Moreno;,citation_author=María Alejandra Molina-Berbeo;,citation_author=Kari Norman;,citation_author=Víctor J Rincón-Parra;,citation_author=Simon Pahls;,citation_author=Pedro R Peres-Neto;,citation_author=Kaitlyn Perreira;,citation_author=Timothée Poisot;,citation_author=Laura J Pollock;,citation_author=María Helena Olaya Rodríguez;,citation_author=Claudia Röösli;,citation_author=François Rousseu;,citation_author=Lina María Sánchez-Clavijo;,citation_author=Meredith Christine Schuman;,citation_author=Oliver Selmoni;,citation_author=Jessica Silva;,citation_author=Thilina Surasinghe;,citation_author=Eren Turak;,citation_author=Erika Suarez Valencia;,citation_author=Sarah Valentin;,citation_author=Noah Wightman;,citation_author=Juan Zuloaga;,citation_author=María Cecilia Londoño Murcia;,citation_author=Andrew Gonzalez;,citation_publication_date=2024-10-28;,citation_cover_date=2024-10-28;,citation_year=2024;,citation_doi=10.32942/X2M320;,citation_publisher=EcoEvoRxiv;">
+<meta name="citation_reference" content="citation_title=The evaluation strip: A new and robust method for plotting predicted responses from species distribution models;,citation_author=Jane Elith;,citation_author=Simon Ferrier;,citation_author=Falk Huettmann;,citation_author=John Leathwick;,citation_publication_date=2005-08-25;,citation_cover_date=2005-08-25;,citation_year=2005;,citation_doi=10.1016/j.ecolmodel.2004.12.007;,citation_volume=186;,citation_journal_title=Ecological modelling;,citation_publisher=Elsevier BV;">
+<meta name="citation_reference" content="citation_title=Julia: A fresh approach to numerical computing;,citation_author=Jeff Bezanson;,citation_author=Alan Edelman;,citation_author=Stefan Karpinski;,citation_author=Viral B Shah;,citation_publication_date=2017-01-07;,citation_cover_date=2017-01-07;,citation_year=2017;,citation_doi=10.1137/141000671;,citation_volume=59;,citation_journal_title=SIAM review. Society for Industrial and Applied Mathematics;,citation_publisher=Society for Industrial &amp;amp;amp; Applied Mathematics (SIAM);">
+<meta name="citation_reference" content="citation_title=Julia for biologists;,citation_author=Elisabeth Roesch;,citation_author=Joe G Greener;,citation_author=Adam L MacLean;,citation_author=Huda Nassar;,citation_author=Christopher Rackauckas;,citation_author=Timothy E Holy;,citation_author=Michael P H Stumpf;,citation_publication_date=2023-05-06;,citation_cover_date=2023-05-06;,citation_year=2023;,citation_doi=10.1038/s41592-023-01832-z;,citation_volume=20;,citation_journal_title=Nature methods;,citation_publisher=Springer Science; Business Media LLC;">
 <meta name="citation_reference" content="citation_title=Functional R code is rare in species distribution and abundance papers;,citation_author=Kenneth F Kellner;,citation_author=Jeffrey W Doser;,citation_author=Jerrold L Belant;,citation_publication_date=2025-01-01;,citation_cover_date=2025-01-01;,citation_year=2025;,citation_doi=10.1002/ecy.4475;,citation_volume=106;,citation_journal_title=Ecology;,citation_publisher=Wiley;">
 <meta name="citation_reference" content="citation_title=Spatiotemporal variation in akodon montensis (cricetidae: Sigmodontinae) and hantaviral seroprevalence in a subtropical forest ecosystem;,citation_author=Robert D Owen;,citation_author=Douglas G Goodin;,citation_author=David E Koch;,citation_author=Yong-Kyu Chu;,citation_author=Colleen B Jonsson;,citation_publication_date=2010-04-16;,citation_cover_date=2010-04-16;,citation_year=2010;,citation_doi=10.1644/09-MAMM-A-152.1;,citation_volume=91;,citation_journal_title=Journal of Mammalogy;,citation_publisher=Oxford Academic;">
 <meta name="citation_reference" content="citation_title=First evidence of akodon-borne orthohantavirus in northeastern argentina;,citation_author=E F Burgos;,citation_author=M V Vadell;,citation_author=C M Bellomo;,citation_author=V P Martinez;,citation_author=O D Salomon;,citation_author=I E Gómez Villafañe;,citation_publication_date=2021-12-01;,citation_cover_date=2021-12-01;,citation_year=2021;,citation_doi=10.1007/s10393-021-01564-6;,citation_volume=18;,citation_journal_title=EcoHealth;,citation_publisher=Springer Science; Business Media LLC;">
@@ -206,34 +180,85 @@ div.csl-indent {
 <h1>Introduction</h1>
 <p>Species Distribution Models (SDMs) are one of the most effective predictive approach to study the global distribution of biodiversity <span class="citation" data-cites="Elith2009">(<a href="#ref-Elith2009" role="doc-biblioref">Elith and Leathwick 2009</a>)</span>. The training and evaluation of a SDM requires many steps, governing both its design and reporting <span class="citation" data-cites="Zurell2020">(<a href="#ref-Zurell2020" role="doc-biblioref">Zurell et al. 2020</a>)</span> and ultimate use and interpretation <span class="citation" data-cites="Araujo2019">(<a href="#ref-Araujo2019" role="doc-biblioref">Araújo et al. 2019</a>)</span>. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models. As <span class="citation" data-cites="Kass2024-vy">Kass et al. (<a href="#ref-Kass2024-vy" role="doc-biblioref">2024</a>)</span> point out, this increase in the diversity of packages (most of them in the <strong>R</strong> language) is a good thing, as it can accommodate multiple workflows, and contributes to the adoption of good practices in the field.</p>
 <p>Because the practice of species distribution modeling and analysis usually involve many different data types, tools that can provide an integrated environment are important: many existing packages have been designed independently, and therefore may suffer when it comes to interoperability. In this manuscript, we present <strong>SpeciesDistributionToolkit</strong> (abbreviated as <strong>SDT</strong>), a meta-package for the <strong>Julia</strong> programming language, offering an integrated environment for the retrieval, formatting, and interpretation of data relevant to the modeling of species distributions.</p>
-<p>previous pub <span class="citation" data-cites="Dansereau2021">Dansereau and Poisot (<a href="#ref-Dansereau2021" role="doc-biblioref">2021</a>)</span></p>
 <p><span class="citation" data-cites="Griffith2024">Griffith et al. (<a href="#ref-Griffith2024" role="doc-biblioref">2024</a>)</span> for large-scale SDM</p>
 </section>
 <section id="application-description" class="level1">
 <h1>Application description</h1>
-<p>…</p>
+<p><strong>SpeciesDistributionToolkit</strong> is released as a package for the <strong>Julia</strong> programming language <span class="citation" data-cites="Bezanson2017">(<a href="#ref-Bezanson2017" role="doc-biblioref">Bezanson et al. 2017</a>)</span>, licensed under the open-source initiative approved MIT license. It has evolved from a previous collection of packages to handle GBIF data <span class="citation" data-cites="Dansereau2021">(<a href="#ref-Dansereau2021" role="doc-biblioref">Dansereau and Poisot 2021</a>)</span>, and now provides extended functionalities and improved performances. The package is registered in the <strong>Julia</strong> package repository and can be downloaded and installed anonymously. It is compatible with version 1.8 and above.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Package</th>
+<th>Lines of code</th>
+<th>Estimated development cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GBIF</strong></td>
+<td>864</td>
+<td>USD 40252</td>
+</tr>
+<tr class="even">
+<td><strong>OccurrencesInterface</strong></td>
+<td>156</td>
+<td>USD 6539</td>
+</tr>
+<tr class="odd">
+<td><strong>Phylopic</strong></td>
+<td>300</td>
+<td>USD 12199</td>
+</tr>
+<tr class="even">
+<td><strong>SimpleSDMDatasets</strong></td>
+<td>2048</td>
+<td>USD 61526</td>
+</tr>
+<tr class="odd">
+<td><strong>SimpleSDMLayers</strong></td>
+<td>1142</td>
+<td>USD 49492</td>
+</tr>
+<tr class="even">
+<td><strong>Fauxcurrences</strong></td>
+<td>392</td>
+<td>USD 21820</td>
+</tr>
+<tr class="odd">
+<td><strong>SDeMo</strong></td>
+<td>2161</td>
+<td>USD 110438</td>
+</tr>
+<tr class="even">
+<td><strong>SDT</strong> (total)</td>
+<td>9248</td>
+<td>USD 460339</td>
+</tr>
+</tbody>
+</table>
+<p>The full source and complete edition history is available at <a href="https://github.com/PoisotLab/SpeciesDistributionToolkit.jl"><code>https://github.com/PoisotLab/SpeciesDistributionToolkit.jl</code></a>. This page additionally has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative examples.</p>
 <section id="component-packages" class="level2">
 <h2 class="anchored" data-anchor-id="component-packages">Component packages</h2>
-<p>An overview of the <strong>SDT</strong> package is given in <a href="#fig-components" class="quarto-xref">Figure&nbsp;1</a>. The project is organized as a “monorepo”, in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. At <strong>SDT</strong> is registered in the <strong>Julia</strong> package repository, it can be installed with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode julia code-with-copy"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Pkg;</span> Pkg.add("SpeciesDistributionToolkit")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>An overview of the <strong>SDT</strong> package is given in <a href="#fig-components" class="quarto-xref">Figure&nbsp;1</a>. The project is organized as a “monorepo”, in which multiple packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complexifying the installation process. As <strong>SDT</strong> is registered in the <strong>Julia</strong> package repository, it can be installed by using <code>add SpeciesDistributionToolkit</code> when in package mode at the <strong>Julia</strong> prompt.</p>
 <p>When loading the <strong>SDT</strong> package with <code>using SpeciesDistributionToolkit</code>, all component packages are automatically and transparently loaded. Therefore, users do not need to know where a specific method or function resides to use it. In the next section, we discuss how this modular design ensure that we can grow the functionality of the toolkit over time, while maintaining strict backward compatibility <em>and</em> allowing full reproducibility of an analysis.</p>
 <div id="fig-components" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="figures/SDT.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Overview of the packages"><img src="figures/SDT.png" class="img-fluid figure-img"></a>
+<a href="figures/SDT.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Overview of the packages included in SpeciesDistributionToolkit. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on interfaces to facilitate code interoperability, there are only three dependency relationships."><img src="figures/SDT.png" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Overview of the packages
+Figure&nbsp;1: Overview of the packages included in <strong>SpeciesDistributionToolkit</strong>. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on <em>interfaces</em> to facilitate code interoperability, there are only three dependency relationships.
 </figcaption>
 </figure>
 </div>
-<p><strong>GBIF</strong></p>
+<p>The <strong>SDT</strong> package primarily provides integration between the other packages, through the mechanism of method overloading, allowing to efficiently join packages together <span class="citation" data-cites="Roesch2023">(<a href="#ref-Roesch2023" role="doc-biblioref">Roesch et al. 2023</a>)</span>. Additional functionalities that reside in the top-level package are the generation of pseudo-absences inspired by <span class="citation" data-cites="Barbet-Massin2012">Barbet-Massin et al. (<a href="#ref-Barbet-Massin2012" role="doc-biblioref">2012</a>)</span>, access to the <code>gadm.org</code> database, handling of polygon data, and various quality of life methods. Because of the modular nature of the code, any of these functions can be transparently moved to their own packages in the future.</p>
+<p>The <strong>OccurrencesInterface</strong> is a light-weight package to provide a common interface for occurrence data. It implements abstract and concrete types to define a single occurrence and a collection thereof, and a series of methods allowing any occurrence data provider or data representation to become fully interoperable with the rest of <strong>SDT</strong>. All <strong>SDT</strong> methods that handle occurrence data do so through the <strong>OccurrencesInterface</strong> interface, allowing future data sources to be integrated without the need for new code.</p>
+<p>The <strong>GBIF</strong> package offers access to the <code>gbif.org</code> streaming API, including the ability to retrieve, filter, and restart downloads. Although this package returns a rich data representation for occurrence data, all the objects it returns adhere to the <strong>OccurrencesInterface</strong> interface.</p>
 <p><strong>SimpleSDMDatasets</strong></p>
 <p><strong>Phylopic</strong></p>
-<p><strong>OccurrencesInterface</strong></p>
 <p><strong>SimpleSDMLayers</strong></p>
-<p>The <strong>Fauxcurrences</strong> packages is inspired by the work of <span class="citation" data-cites="Osborne2022">Osborne et al. (<a href="#ref-Osborne2022" role="doc-biblioref">2022</a>)</span>, and</p>
-<p><strong>SDeMo</strong></p>
+<p>The <strong>Fauxcurrences</strong> packages is inspired by the work of <span class="citation" data-cites="Osborne2022">Osborne et al. (<a href="#ref-Osborne2022" role="doc-biblioref">2022</a>)</span>, and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conservation.</p>
+<p>The <strong>SDeMo</strong> package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular <span class="citation" data-cites="Elith2005">(<a href="#ref-Elith2005" role="doc-biblioref">Elith et al. 2005</a>)</span> and inflated <span class="citation" data-cites="Zurell2012">(<a href="#ref-Zurell2012" role="doc-biblioref">Zurell, Elith, and Schröder 2012</a>)</span> partial responses, as well as the calculation and mapping of Shapley values <span class="citation" data-cites="Wadoux2023 Mesgaran2014">(<a href="#ref-Wadoux2023" role="doc-biblioref">Wadoux, Saby, and Martin 2023</a>; <a href="#ref-Mesgaran2014" role="doc-biblioref">Mesgaran, Cousens, and Webber 2014</a>)</span>, and the generation of counterfactuals <span class="citation" data-cites="VanLooveren2019">Karimi et al. (<a href="#ref-Karimi2019" role="doc-biblioref">2019</a>)</span>.</p>
 </section>
 <section id="software-information" class="level2">
 <h2 class="anchored" data-anchor-id="software-information">Software information</h2>
@@ -293,7 +318,6 @@ Figure&nbsp;3: yeah
 <section id="training-a-species-distribution-model" class="level2">
 <h2 class="anchored" data-anchor-id="training-a-species-distribution-model">Training a species distribution model</h2>
 <p><span class="citation" data-cites="Bagnall2018">(<a href="#ref-Bagnall2018" role="doc-biblioref">Bagnall et al. 2018</a>)</span></p>
-<p>PA routines from <span class="citation" data-cites="Barbet-Massin2012">Barbet-Massin et al. (<a href="#ref-Barbet-Massin2012" role="doc-biblioref">2012</a>)</span></p>
 <div class="quarto-embed-nb-cell">
 <div id="cell-fig-sdm-output" class="cell" data-execution_count="200">
 <div id="fig-sdm-output" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
@@ -343,11 +367,17 @@ Bagnall, A, M Flynn, J Large, J Line, A Bostrom, and G Cawley. 2018. <span>“Is
 <div id="ref-Barbet-Massin2012" class="csl-entry" role="listitem">
 Barbet-Massin, Morgane, Frédéric Jiguet, Cécile Hélène Albert, and Wilfried Thuiller. 2012. <span>“Selecting Pseudo‐absences for Species Distribution Models: How, Where and How Many?: How to Use Pseudo-Absences in Niche Modelling?”</span> <em>Methods in Ecology and Evolution</em> 3 (April): 327–38. <a href="https://doi.org/10.1111/j.2041-210x.2011.00172.x">https://doi.org/10.1111/j.2041-210x.2011.00172.x</a>.
 </div>
+<div id="ref-Bezanson2017" class="csl-entry" role="listitem">
+Bezanson, Jeff, Alan Edelman, Stefan Karpinski, and Viral B Shah. 2017. <span>“Julia: A Fresh Approach to Numerical Computing.”</span> <em>SIAM Review. Society for Industrial and Applied Mathematics</em> 59 (January): 65–98. <a href="https://doi.org/10.1137/141000671">https://doi.org/10.1137/141000671</a>.
+</div>
 <div id="ref-Burgos2021" class="csl-entry" role="listitem">
 Burgos, E F, M V Vadell, C M Bellomo, V P Martinez, O D Salomon, and I E Gómez Villafañe. 2021. <span>“First Evidence of Akodon-Borne Orthohantavirus in Northeastern Argentina.”</span> <em>EcoHealth</em> 18 (December): 429–39. <a href="https://doi.org/10.1007/s10393-021-01564-6">https://doi.org/10.1007/s10393-021-01564-6</a>.
 </div>
 <div id="ref-Dansereau2021" class="csl-entry" role="listitem">
 Dansereau, Gabriel, and Timothée Poisot. 2021. <span>“<span>SimpleSDMLayers</span>.jl and <span>GBIF</span>.jl: A Framework for Species Distribution Modeling in Julia.”</span> <em>Journal of Open Source Software</em> 6 (January): 2872. <a href="https://doi.org/10.21105/joss.02872">https://doi.org/10.21105/joss.02872</a>.
+</div>
+<div id="ref-Elith2005" class="csl-entry" role="listitem">
+Elith, Jane, Simon Ferrier, Falk Huettmann, and John Leathwick. 2005. <span>“The Evaluation Strip: A New and Robust Method for Plotting Predicted Responses from Species Distribution Models.”</span> <em>Ecological Modelling</em> 186 (August): 280–89. <a href="https://doi.org/10.1016/j.ecolmodel.2004.12.007">https://doi.org/10.1016/j.ecolmodel.2004.12.007</a>.
 </div>
 <div id="ref-Elith2009" class="csl-entry" role="listitem">
 Elith, Jane, and John R Leathwick. 2009. <span>“Species Distribution Models: Ecological Explanation and Prediction Across Space and Time.”</span> <em>Annual Review of Ecology, Evolution, and Systematics</em> 40 (December): 677–97. <a href="https://doi.org/10.1146/annurev.ecolsys.110308.120159">https://doi.org/10.1146/annurev.ecolsys.110308.120159</a>.
@@ -361,6 +391,9 @@ Griffith, Jory, Jean-Michel Lord, Michael D Catchen, Maria Isabel Arce-Plata, Ma
 <div id="ref-Karger2017" class="csl-entry" role="listitem">
 Karger, Dirk Nikolaus, Olaf Conrad, Jürgen Böhner, Tobias Kawohl, Holger Kreft, Rodrigo Wilber Soria-Auza, Niklaus E Zimmermann, H Peter Linder, and Michael Kessler. 2017. <span>“Climatologies at High Resolution for the Earth’s Land Surface Areas.”</span> <em>Scientific Data</em> 4 (September): 170122. <a href="https://doi.org/10.1038/sdata.2017.122">https://doi.org/10.1038/sdata.2017.122</a>.
 </div>
+<div id="ref-Karimi2019" class="csl-entry" role="listitem">
+Karimi, Amir-Hossein, Gilles Barthe, Borja Balle, and Isabel Valera. 2019. <span>“Model-Agnostic Counterfactual Explanations for Consequential Decisions.”</span> <em>arXiv [Cs.LG]</em>, May.
+</div>
 <div id="ref-Kass2024-vy" class="csl-entry" role="listitem">
 Kass, Jamie M, Adam B Smith, Dan L Warren, Sergio Vignali, Sylvain Schmitt, Matthew E Aiello-Lammens, Eduardo Arlé, et al. 2024. <span>“Achieving Higher Standards in Species Distribution Modeling by Leveraging the Diversity of Available Software.”</span> <em>Ecography</em>, November. <a href="https://doi.org/10.1111/ecog.07346">https://doi.org/10.1111/ecog.07346</a>.
 </div>
@@ -370,14 +403,29 @@ Kellner, Kenneth F, Jeffrey W Doser, and Jerrold L Belant. 2025. <span>“Functi
 <div id="ref-Leroy2016" class="csl-entry" role="listitem">
 Leroy, Boris, Christine N Meynard, Céline Bellard, and Franck Courchamp. 2016. <span>“Virtualspecies, an <span>R</span> Package to Generate Virtual Species Distributions.”</span> <em>Ecography</em> 39 (June): 599–607. <a href="https://doi.org/10.1111/ecog.01388">https://doi.org/10.1111/ecog.01388</a>.
 </div>
+<div id="ref-Mesgaran2014" class="csl-entry" role="listitem">
+Mesgaran, Mohsen B, Roger D Cousens, and Bruce L Webber. 2014. <span>“Here Be Dragons: A Tool for Quantifying Novelty Due to Covariate Range and Correlation Change When Projecting Species Distribution Models.”</span> <em>Diversity &amp; Distributions</em> 20 (October): 1147–59. <a href="https://doi.org/10.1111/ddi.12209">https://doi.org/10.1111/ddi.12209</a>.
+</div>
 <div id="ref-Osborne2022" class="csl-entry" role="listitem">
 Osborne, Owen G, Henry G Fell, Hannah Atkins, Jan van Tol, Daniel Phillips, Leonel Herrera-Alsina, Poppy Mynard, et al. 2022. <span>“Fauxcurrence: Simulating Multi‐species Occurrences for Null Models in Species Distribution Modelling and Biogeography.”</span> <em>Ecography</em> 2022 (July): e05880. <a href="https://doi.org/10.1111/ecog.05880">https://doi.org/10.1111/ecog.05880</a>.
 </div>
 <div id="ref-Owen2010" class="csl-entry" role="listitem">
 Owen, Robert D, Douglas G Goodin, David E Koch, Yong-Kyu Chu, and Colleen B Jonsson. 2010. <span>“Spatiotemporal Variation in Akodon Montensis (Cricetidae: Sigmodontinae) and Hantaviral Seroprevalence in a Subtropical Forest Ecosystem.”</span> <em>Journal of Mammalogy</em> 91 (April): 467–81. <a href="https://doi.org/10.1644/09-MAMM-A-152.1">https://doi.org/10.1644/09-MAMM-A-152.1</a>.
 </div>
+<div id="ref-Roesch2023" class="csl-entry" role="listitem">
+Roesch, Elisabeth, Joe G Greener, Adam L MacLean, Huda Nassar, Christopher Rackauckas, Timothy E Holy, and Michael P H Stumpf. 2023. <span>“Julia for Biologists.”</span> <em>Nature Methods</em> 20 (May): 655–64. <a href="https://doi.org/10.1038/s41592-023-01832-z">https://doi.org/10.1038/s41592-023-01832-z</a>.
+</div>
 <div id="ref-Tuanmu2014" class="csl-entry" role="listitem">
 Tuanmu, Mao-Ning, and Walter Jetz. 2014. <span>“A Global 1‐km Consensus Land‐cover Product for Biodiversity and Ecosystem Modelling: Consensus Land Cover.”</span> <em>Global Ecology and Biogeography: A Journal of Macroecology</em> 23 (September): 1031–45. <a href="https://doi.org/10.1111/geb.12182">https://doi.org/10.1111/geb.12182</a>.
+</div>
+<div id="ref-VanLooveren2019" class="csl-entry" role="listitem">
+Van Looveren, Arnaud, and Janis Klaise. 2019. <span>“Interpretable Counterfactual Explanations Guided by Prototypes.”</span> <em>arXiv [Cs.LG]</em>, July.
+</div>
+<div id="ref-Wadoux2023" class="csl-entry" role="listitem">
+Wadoux, Alexandre M J-C, Nicolas P A Saby, and Manuel P Martin. 2023. <span>“Shapley Values Reveal the Drivers of Soil Organic Carbon Stock Prediction.”</span> <em>SOIL</em> 9 (January): 21–38. <a href="https://doi.org/10.5194/soil-9-21-2023">https://doi.org/10.5194/soil-9-21-2023</a>.
+</div>
+<div id="ref-Zurell2012" class="csl-entry" role="listitem">
+Zurell, Damaris, Jane Elith, and Boris Schröder. 2012. <span>“Predicting to New Environments: Tools for Visualizing Model Behaviour and Impacts on Mapped Distributions.”</span> <em>Diversity &amp; Distributions</em> 18 (June): 628–34. <a href="https://doi.org/10.1111/j.1472-4642.2012.00887.x">https://doi.org/10.1111/j.1472-4642.2012.00887.x</a>.
 </div>
 <div id="ref-Zurell2020" class="csl-entry" role="listitem">
 Zurell, Damaris, Janet Franklin, Christian König, Phil J Bouchet, Carsten F Dormann, Jane Elith, Guillermo Fandos, et al. 2020. <span>“A Standard Protocol for Reporting Species Distribution Models.”</span> <em>Ecography</em> 43 (September): 1261–77. <a href="https://doi.org/10.1111/ecog.04960">https://doi.org/10.1111/ecog.04960</a>.
