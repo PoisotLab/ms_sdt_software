@@ -63,7 +63,7 @@ The **GBIF** package offers access to the `gbif.org` streaming API [@GBIF:TheGlo
 
 The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified weights for conserving  intra and inter-specific occurrence distances.
 
-The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular [@Elith2005] and inflated [@Zurell2012] partial responses, as well as the calculation and mapping of Shapley values [@Wadoux2023; @Mesgaran2014], and the generation of counterfactuals [@VanLooveren2019, @Karimi2019].
+The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular [@Elith2005] and inflated [@Zurell2012] partial responses, as well as the calculation and mapping of Shapley values [@Wadoux2023; @Mesgaran2014] using the standard Monte-Carlo approach [@Mitchell2021], and the generation of counterfactuals [@VanLooveren2019, @Karimi2019].
 
 ## Software information
 
@@ -73,7 +73,7 @@ This strict reliance on semantic versioning solves the issues of maintaining com
 
 ## Integration with other packages
 
-The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends) for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ**, or directly saved as csv files.
+The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends, with support for **GeoMakie**) for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ**, or directly saved as csv files.
 
 Interfaces to internal **Julia** methods are also implemented whenever they are pertinent. In particular, **SimpleSDMLayers** objects behave like arrays, are iterable, and broadcastable; objects from **OccurrencesInterface** behave as arrays and are similarly iterable. The **SDeMo** package relies on part of the **StatsAPI** interface, allowing to easily define new data transformation and classifier types to support additional features.
 
@@ -105,7 +105,9 @@ In this case study, we illustrate the integration of **SDeMo** and **SimpleSDMLa
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
-The full notebook (Supp. Mat. 3) has additional information on routines for variable selection, stratified cross-validation, as well as the construction of the ensemble from a single PCA and decision tree. In addition, Supp. Mat. 3 presents the partial responses and Shapley values for the most important predictor.
+The full notebook (Supp. Mat. 3) has additional information on routines for variable selection, stratified cross-validation, as well as the construction of the ensemble from a single PCA and decision tree. In addition, we report in @fig-sdm-responses the partial and inflated partial responses to the most important variable, as well as the (Monte-Carlo) Shapley values for each prediction in the training set. Because **SDeMo** works through generic functions, these methods can be applied to any model specified by the user.
+
+{{< embed appendix/sdm.ipynb#fig-sdm-responses >}}
 
 ## Distribution of a virtual species
 
