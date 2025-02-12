@@ -24,7 +24,6 @@ format:
   docx: default
   typst:
     toc: false
-    mainfont: "EB Garamond"
     fontsize: 10pt
     papersize: us-letter
     bibliography: references.bib
@@ -44,7 +43,7 @@ format:
           #show heading.where(level: 2): it => text(
             style: "italic",
             weight: "regular",
-            size: 11pt,
+            size: 10pt,
             it.body + [: ]
           )
 
