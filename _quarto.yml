@@ -29,8 +29,8 @@ format:
     bibliography: references.bib
     bibliographystyle: apa
     margin:
-      x: 1.8cm
-      y: 2cm
+      x: 1.6cm
+      y: 1.8cm
     columns: 2
     include-before-body:
       - text: |
