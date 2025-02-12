@@ -6,14 +6,14 @@ notebook-links: global
 manuscript:
   article: index.qmd
   notebooks:
-    - notebook: appendix/gbif.ipynb
-      title: Supp. Mat. XX - GBIF data
     - notebook: appendix/consensus.ipynb
-      title: Supp. Mat. XX - Landcover consensus
+      title: Supp. Mat. 1 - Landcover consensus
+    - notebook: appendix/gbif.ipynb
+      title: Supp. Mat. 2 - GBIF data
     - notebook: appendix/sdm.ipynb
-      title: Supp. Mat. YY - Species distribution model
+      title: Supp. Mat. 3 - Species distribution model
     - notebook: appendix/virtualspecies.ipynb
-      title: Supp. Mat. ZZ - Creating virtual species
+      title: Supp. Mat. 4 - Creating virtual species
 
 lang: en-CA
 
@@ -27,6 +27,8 @@ format:
     mainfont: "EB Garamond"
     fontsize: 10pt
     papersize: us-letter
+    bibliography: references.bib
+    bibliographystyle: apa
     margin:
       x: 1.8cm
       y: 2cm
@@ -37,7 +39,7 @@ format:
           #show heading.where(level: 1): set text(rgb("#114f54"))
           #show heading.where(level: 2): set text(rgb("#2e5385"))
           #show heading.where(level: 1): it => block(width: 100%)[
-            #smallcaps(it.body)
+            #block(it.body)
           ]
           #show heading.where(level: 2): it => text(
             style: "italic",
