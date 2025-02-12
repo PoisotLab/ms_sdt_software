@@ -33,7 +33,6 @@ format:
       x: 1.8cm
       y: 2cm
     columns: 2
-    keep-typ: true
     include-before-body:
       - text: |
           #show heading: set text(black)

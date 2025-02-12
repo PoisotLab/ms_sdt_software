@@ -51,7 +51,7 @@ The **GBIF** package offers access to the `gbif.org` streaming API, including th
 
 **SimpleSDMDatasets** implements an interface to retrieve and locally store raster data, which can be extended by users to support additional data sources. In addition, it offers access to a series of data sources, including the biodiversity mapping project [@Jenkins2013], the EarthEnv collection for land cover [@Tuanmu2014] and habitat heterogeneity [@Tuanmu2015], Copernicus land cover 100m data [@Buchhorn2020], the PaleoClim [@Brown2018] data, the WorldClim 1 and 2 data [@Fick2017] and their projections under various RCPs and SSP, and part of the CHELSA 1 and 2 data [@Karger2017] and their projections under various RCPs and SSPs.
 
-**Phylopic**
+**Phylopic** offers a wrapper around the `phylopic.org` API to download silhouettes for taxonomic entities. It also provides utilities for citation of the downloaded images. Its functionalities are similar to the **rphylopic** package [@Gearty2023].
 
 The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified relative weight of intra and inter-specific distances conservation.
 
