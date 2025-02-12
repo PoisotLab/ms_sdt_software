@@ -26,8 +26,6 @@ format:
     toc: false
     mainfont: "EB Garamond"
     fontsize: 10pt
-    citeproc: true
-    bibliographystyle: https://www.zotero.org/styles/methods-in-ecology-and-evolution
     papersize: us-letter
     margin:
       x: 1.8cm
@@ -35,6 +33,7 @@ format:
     columns: 2
     include-before-body:
       - text: |
+          #set par(leading: 0.5em)
           #show heading.where(level: 1): set text(rgb("#114f54"))
           #show heading.where(level: 2): set text(rgb("#2e5385"))
           #show heading.where(level: 1): it => block(width: 100%)[
