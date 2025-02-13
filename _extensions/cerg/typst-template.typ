@@ -36,7 +36,7 @@
     // show bibliography: set text(7pt)
 
   // Set the body font.
-  set text(font: "Linux Libertine", size: 10pt)
+  set text(font: "Libertinus Serif", size: 10pt)
 
   // Configure the page.
   set page(
@@ -46,7 +46,7 @@
       (x: 41.5pt, top: 80.51pt, bottom: 89.51pt)
     } else {
       (
-        x: (50pt / 216mm) * 100%,
+        x: (40pt / 216mm) * 100%,
         top: (55pt / 279mm) * 100%,
         bottom: (64pt / 279mm) * 100%,
       )
@@ -61,22 +61,22 @@
   set enum(indent: 10pt, body-indent: 9pt)
   set list(indent: 10pt, body-indent: 9pt)
 
+  // Code
+  show raw: set text(font: "JuliaMono", rgb("#232323"))
+
   // Paragraph options
   set par(leading: 0.5em, first-line-indent: 0pt)
-  show heading.where(level: 1): set text(rgb("#114f54"))
-  show heading.where(level: 2): set text(rgb("#2e5385"))
+  show heading.where(level: 1): set text(12pt, rgb("#114f54"), font: "Inter", weight: "medium")
+  show heading.where(level: 2): set text(10pt, rgb("#2e5385"), font: "Inter", weight: "regular", style: "italic")
   show heading.where(level: 1): it => block(width: 100%)[
     #block(it.body)
   ]
-  show heading.where(level: 2): it => text(
-    style: "italic",
-    weight: "regular",
-    size: 10pt,
-    it.body + [: ]
-  )
+  show heading.where(level: 2): it => block(width: 100%)[
+    #block(it.body)
+  ]
 
   // Display the paper's title.
-  text(18pt, weight: "medium", title)
+  text(18pt, rgb("#1d8265"), weight: "light",  font: "Inter", title)
   v(8.35mm, weak: true)
 
 
@@ -124,7 +124,7 @@
   v(1cm)
 
   // Start two column mode and configure paragraph properties.
-  show: columns.with(2, gutter: 12pt)
+  show: columns.with(2, gutter: 14pt)
   set par(justify: true, first-line-indent: 0em)
   show par: set block(spacing: 0.65em)
 

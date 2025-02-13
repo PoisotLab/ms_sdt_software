@@ -22,7 +22,6 @@ format:
     comments:
       hypothesis: true
   docx: default
-  cerg-typst:
-    bibliographystyle: springer-basic-author-date
+  cerg-typst: default
 execute:
   freeze: true

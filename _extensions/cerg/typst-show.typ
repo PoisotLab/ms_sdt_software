@@ -12,6 +12,8 @@ $if(by-author)$
                 (
                     name: "$it.name.literal$",
                     affiliations: [$for(it.affiliations)$$it.number$$sep$,$endfor$],
+                    email: "$it.email$",
+                    orcid: "$it.orcid$"
                 ),
             $endif$
         $endfor$
