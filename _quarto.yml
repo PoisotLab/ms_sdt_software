@@ -22,30 +22,7 @@ format:
     comments:
       hypothesis: true
   docx: default
-  typst:
-    toc: false
-    fontsize: 10pt
-    papersize: us-letter
-    bibliography: references.bib
-    bibliographystyle: apa
-    margin:
-      x: 1.6cm
-      y: 1.8cm
-    columns: 2
-    include-before-body:
-      - text: |
-          #set par(leading: 0.5em)
-          #show heading.where(level: 1): set text(rgb("#114f54"))
-          #show heading.where(level: 2): set text(rgb("#2e5385"))
-          #show heading.where(level: 1): it => block(width: 100%)[
-            #block(it.body)
-          ]
-          #show heading.where(level: 2): it => text(
-            style: "italic",
-            weight: "regular",
-            size: 10pt,
-            it.body + [: ]
-          )
-
+  cerg-typst:
+    bibliographystyle: springer-basic-author-date
 execute:
   freeze: true

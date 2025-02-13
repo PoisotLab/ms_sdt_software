@@ -1,0 +1,10 @@
+title: CERG
+author: T. Poisot
+version: "0.0.1"
+quarto-required: ">=1.6.0"
+contributes:
+  formats:
+    typst:
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ

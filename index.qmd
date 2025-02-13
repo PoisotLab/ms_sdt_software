@@ -4,6 +4,7 @@ authors:
   - name: Timothée Poisot
     affiliation:
         - ref: udem
+        - ref: qcbs
     roles: writing
     email: timothee.poisot@umontreal.ca
     corresponding: true
@@ -18,9 +19,20 @@ affiliations:
       city: Montréal
       region: QC
       country: Canada
+    - id: qcbs
+      name: Québec Centre for Biodiversity Science
+      city: Montréal
+      region: QC
+      country: Canada
 bibliography: references.bib
 engine: julia
 abstract: (1) Species distribution modeling requires to handle varied types of data, and benefits from an integrated approach to programming. (2) We introduce **SpeciesDistributionToolkit**, a **Julia** package aiming to facilitate the production of species distribution models. It covers various steps of the data collection and analysis process, extending to the development of interfaces for integration of additional functionalities. (3) By relying on semantic versioning and strong design choices on modularity, we expect that this package will lead to improved reproducibility and long-term maintainability. (4) We illustrate the functionalities of the package through several case studies, accompanied by reproducible code.
+keywords:
+    - species distribution models
+    - occurrence data
+    - land use
+    - climatic data
+    - pseudo-absences
 ---
 
 # Introduction
@@ -63,7 +75,7 @@ The **GBIF** package offers access to the `gbif.org` streaming API [@GBIF:TheGlo
 
 The **Fauxcurrences** packages is inspired by the work of @Osborne2022, and allows generating a series of simulated occurrence data that have the same statistical structure as observed ones. The package supports multi-species data, with user-specified weights for conserving  intra and inter-specific occurrence distances.
 
-The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular [@Elith2005] and inflated [@Zurell2012] partial responses, as well as the calculation and mapping of Shapley values [@Wadoux2023; @Mesgaran2014] using the standard Monte-Carlo approach [@Mitchell2021], and the generation of counterfactuals [@VanLooveren2019, @Karimi2019].
+The **SDeMo** package is aimed at providing tools to use as part of training and education material on species distribution modeling. By providing a series of data transformation (PCA, Whitening, z-score) and classifiers (BIOCLIM, Naive Bayes, and decision trees), it offers the basic elements to demonstrate training and evaluation of SDMs, as well as techniques related to ensembles and bagging. In addition, to promote the use of interpretable techniques, the package supports regular [@Elith2005] and inflated [@Zurell2012] partial responses, as well as the calculation and mapping of Shapley values [@Wadoux2023; @Mesgaran2014] using the standard Monte-Carlo approach [@Mitchell2021], and the generation of counterfactuals [@VanLooveren2019; @Karimi2019].
 
 ## Software information
 
@@ -123,4 +135,4 @@ We have presented **SpeciesDistributionToolkit**, a package for the **Julia** pr
 
 Plans for active development of the package are focused on (i) additional techniques for pseudo-absence generations, likely leading to their separate component package, (ii) full compatibility with the **MultivariateStatistics** and **Clustering** packages for transformation and aggregation, and (iii) additional **SDeMo** functionalities to allow cross-validation techniques with biologically relevant structure [@Roberts2017].
 
-**Acknowledgements:** TP is funded by an NSERC Discovery grant, a Discovery Acceleration Supplement grant, and a Wellcome Trust grant (223764/Z/21/Z). MDC is funded by an IVADO Postdoctoral Fellowship. 
+**Acknowledgements**: TP is funded by an NSERC Discovery grant, a Discovery Acceleration Supplement grant, and a Wellcome Trust grant (223764/Z/21/Z). MDC is funded by an IVADO Postdoctoral Fellowship. 
