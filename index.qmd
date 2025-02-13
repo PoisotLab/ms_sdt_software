@@ -4,10 +4,17 @@ authors:
   - name: Timothée Poisot
     affiliation:
         - ref: udem
-        - ref: qcbs
     roles: writing
     email: timothee.poisot@umontreal.ca
     corresponding: true
+  - name: Ariane Bussières-Fournel
+    affiliation:
+        - ref: udem
+    email: ariane.bussieres-fournel@umontreal.ca
+  - name: Gabriel Dansereau
+    affiliation:
+        - ref: udem
+    email: gabriel.dansereau@umontreal.ca
   - name: Michael D. Catchen
     affiliation:
         - ref: udem
@@ -16,11 +23,6 @@ affiliations:
     - id: udem
       name: Université de Montréal
       department: Département de Sciences Biologiques
-      city: Montréal
-      region: QC
-      country: Canada
-    - id: qcbs
-      name: Québec Centre for Biodiversity Science
       city: Montréal
       region: QC
       country: Canada
