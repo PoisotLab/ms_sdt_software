@@ -88,7 +88,7 @@ This strict reliance on semantic versioning solves the issues of maintaining com
 
 ## Integration with other packages
 
-The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends, with support for **GeoMakie**) for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ**, or directly saved as csv files.
+The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends, with support for **GeoMakie**) for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ** [@Blaom2020], or directly saved as csv files.
 
 Interfaces to internal **Julia** methods are also implemented whenever they are pertinent. In particular, **SimpleSDMLayers** objects behave like arrays, are iterable, and broadcastable; objects from **OccurrencesInterface** behave as arrays and are similarly iterable. The **SDeMo** package relies on part of the **StatsAPI** interface, allowing to easily define new data transformation and classifier types to support additional features.
 
@@ -120,7 +120,7 @@ In this case study, we illustrate the integration of **SDeMo** and **SimpleSDMLa
 
 {{< embed appendix/sdm.ipynb#fig-sdm-output >}}
 
-The full notebook (Supp. Mat. 3) has additional information on routines for variable selection, stratified cross-validation, as well as the construction of the ensemble from a single PCA and decision tree. In addition, we report in @fig-sdm-responses the partial and inflated partial responses to the most important variable, as well as the (Monte-Carlo) Shapley values for each prediction in the training set. Because **SDeMo** works through generic functions, these methods can be applied to any model specified by the user.
+The full notebook (Supp. Mat. 3) has additional information on routines for variable selection, stratified cross-validation, as well as the construction of the ensemble from a single PCA and decision tree. In addition, we report in @fig-sdm-responses the partial and inflated partial responses to the most important variable, as well as the (Monte-Carlo) Shapley values for each prediction in the training set. Because **SDeMo** works through generic functions, these methods can be applied to any model specified by the user. In practice, flexible ML frameworks exist for **Julia**, notably **MLJ** [@Blaom2020], which can be used for real-world applications.
 
 {{< embed appendix/sdm.ipynb#fig-sdm-responses >}}
 
