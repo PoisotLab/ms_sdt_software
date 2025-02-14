@@ -89,7 +89,7 @@ This strict reliance on semantic versioning solves the issues of maintaining com
 
 ## Integration with other packages
 
-The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends, with support for **GeoMakie**) for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** and **MLJ** [@Blaom2020], or directly saved as csv files.
+The **SDT** package benefits from close integration with other packages in the **Julia** universe. Notably, this includes **Makie** (and all related backends, with support for **GeoMakie**) [@Danisch2021] for plotting and interactive data visualisation, where usual plot types are overloaded for both layer and occurrence data. Most data handled by **SDT** can be exported using the **Tables** interface, which allows data to be consumed by other packages like **DataFrames** [@Bouchet-Valat2023] and **MLJ** [@Blaom2020], or directly saved as csv files.
 
 Interfaces to internal **Julia** methods are also implemented whenever they are pertinent. In particular, **SimpleSDMLayers** objects behave like arrays, are iterable, and broadcastable; objects from **OccurrencesInterface** behave as arrays and are similarly iterable. The **SDeMo** package relies on part of the **StatsAPI** interface, allowing to easily define new data transformation and classifier types to support additional features.
 
