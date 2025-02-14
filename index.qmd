@@ -54,6 +54,8 @@ The **SDT** package is seeing increased adoption, and is now used as part of the
 
   [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]: https://github.com/PoisotLab/SpeciesDistributionToolkit.jl
 
+**TODO** frontload some of the cool parts to justify the tool description
+
 ## Component packages
 
 An overview of the **SDT** package is given in @fig-components. The project is organized as a "monorepo", in which multiple separate, but interoperable, packages live. This allows expanding the scope of the package by moving functionalities into new component packages, without complicating the installation process. As **SDT** is registered in the **Julia** package repository, it can be installed by using `add SpeciesDistributionToolkit` when in package mode at the **Julia** prompt.
@@ -63,7 +65,6 @@ When loading the **SDT** package with `using SpeciesDistributionToolkit`, all co
 ![Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships (black arrows).]
 
   [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships (black arrows).]: figures/SDT.png {#fig-components}
-
 
 The **SDT** package primarily provides integration between the other packages via method overloading (reusing method names for intuitive and concise code), allowing to efficiently join packages together [@Roesch2023]. Additional functionalities that reside in the top-level package are the generation of pseudo-absences inspired by @Barbet-Massin2012, access to the `gadm.org` database, handling of polygon data and zonal statistics, and various quality of life methods. Because of the modular nature of the code, any of these functions can be transparently moved to their own packages in the future without affecting reproducibility.
 
