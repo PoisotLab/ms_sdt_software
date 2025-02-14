@@ -102,7 +102,7 @@ In this section, we provide a series of case studies, meant to illustrate the us
 
 To illustrate the interactions between the component packages, we provide a simple illustration (Supp. Mat. 1) where we (i) request occurrence data using the **GBIF** package, (ii) download the silhouette of the species through **Phylopic**, and (iii) extract temperature and precipitation data at the points of occurrence. The results are presented in @fig-gbif-phylopic. The full notebook includes information about basic operations on raster data, as well as extraction of data based on occurrence records.
 
-{{< embed appendix/gbif.ipynb#fig-gbif-phylopic >}}
+{{< embed appendix/1-gbif.ipynb#fig-gbif-phylopic >}}
 
 In practice, although the data are retrieved using the **GBIF** package, they are used internally by **SDT** through the **OccurrencesInterface** package. This package defines a small convention to handle georeferenced occurrence data, and allows to transparently integrate additional occurrence sources. By defining five methods for a custom data type, users can plug-in any occurrence data source and enjoy full compatibility with the entire **SDT** functionalities.
 
@@ -110,7 +110,7 @@ In practice, although the data are retrieved using the **GBIF** package, they ar
 
 In this case study (Supp. Mat. 2), we retrieve the land cover data from @Tuanmu2014, clip them to a GeoJSON polygon describing the country of Paraguay (**SDT** can download data directly from `gadm.org`), and apply the `mosaic` operation to figure out which class is the most locally abundant. This case study uses the **SimpleSDMDatasets** package to download (and locally cache) the raster data, as well as the **SimpleSDMLayers** package to provide basic utility functions on raster data. The results are presented in @fig-landcover-consensus.
 
-{{< embed appendix/consensus.ipynb#fig-landcover-consensus >}}
+{{< embed appendix/2-consensus.ipynb#fig-landcover-consensus >}}
 
 When first downloading data through **SimpleSDMDatasets**, they will be stored locally for future use. When the data are requested a second time, they are read directly from the disk, speeding up the process massively. Note that the location of the data is (i) standardized by the package itself, making the file findable to humans, and (ii) changeable by the user to, *e.g.*, store the data within the project folder rather than in a central location. As much as possible, **SDT** will only read the part of the raster data that is required given the region of interest to the user. This is done by providing additional context in the form of a bounding box (in WGS84, regardless of the underlying raster data projection). **SDT** has methods to calculate the bounding box for all the objects it supports.
 
@@ -118,17 +118,17 @@ When first downloading data through **SimpleSDMDatasets**, they will be stored l
 
 In this case study, we illustrate the integration of **SDeMo** and **SimpleSDMLayers** to train a species distribution model. We specifically train a rotation forest [@Bagnall2018], an homogeneous ensemble of PCA followed by decision trees. The results are presented in @fig-sdm-output. The model is built by selecting an optimal suite of BioClim variables, then predicted in space, and the resulting predicted species range is finally clipped by the elevational range observed in the occurrence data.
 
-{{< embed appendix/sdm.ipynb#fig-sdm-output >}}
+{{< embed appendix/3-sdm.ipynb#fig-sdm-output >}}
 
 The full notebook (Supp. Mat. 3) has additional information on routines for variable selection, stratified cross-validation, as well as the construction of the ensemble from a single PCA and decision tree. In addition, we report in @fig-sdm-responses the partial and inflated partial responses to the most important variable, as well as the (Monte-Carlo) Shapley values for each prediction in the training set. Because **SDeMo** works through generic functions, these methods can be applied to any model specified by the user. In practice, flexible ML frameworks exist for **Julia**, notably **MLJ** [@Blaom2020], which can be used for real-world applications.
 
-{{< embed appendix/sdm.ipynb#fig-sdm-responses >}}
+{{< embed appendix/3-sdm.ipynb#fig-sdm-responses >}}
 
 ## Distribution of a virtual species
 
 In the final case study (Supp. Mat. 4), we simulate a virtual distribution [@Hirzel2001], using a species with a logistic response to each environmental covariate [@Leroy2016], and a prevalence similar to the one predicted in @fig-sdm-output. The results are presented in @fig-virtual-species.
 
-{{< embed appendix/virtualspecies.ipynb#fig-virtual-species >}}
+{{< embed appendix/4-virtualspecies.ipynb#fig-virtual-species >}}
 
 Because the layers used by **SDT** are broadcastable, we can rapidly apply a function (here, the logistic response to the environmental covariate) to each layer, and then multiply the suitabilities together. The last step is facilitated by the fact that most basic arithmetic operations are defined for layers, allowing for example to add, multiply, substract, and divide them by one another.
 
