@@ -6,10 +6,10 @@ notebook-links: global
 manuscript:
   article: index.qmd
   notebooks:
-    - notebook: appendix/consensus.ipynb
-      title: Supp. Mat. 1 - Landcover consensus
     - notebook: appendix/gbif.ipynb
-      title: Supp. Mat. 2 - GBIF data
+      title: Supp. Mat. 1 - Working with GBIF data
+    - notebook: appendix/consensus.ipynb
+      title: Supp. Mat. 2 - Landcover consensus
     - notebook: appendix/sdm.ipynb
       title: Supp. Mat. 3 - Species distribution model
     - notebook: appendix/virtualspecies.ipynb
