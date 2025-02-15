@@ -51,7 +51,13 @@ keywords:
 
 # Introduction
 
-Species Distribution Models (SDMs) are one of the most effective predictive approaches to study the global distribution of biodiversity [@Elith2009]. The training and evaluation of a SDM requires many steps, governing both design and reporting [@Zurell2020], and ultimately use and interpretation [@Araujo2019]. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models.
+Species Distribution Models [SDMs; @Elith2009] are one of the most effective predictive approaches to study the global distribution of biodiversity .
+
+conservation decision @Guisan2013-ps
+planning @McSHEA2014
+impact assesment @Baker2021
+
+The training and evaluation of a SDM requires many steps, governing both design and reporting [@Zurell2020], and ultimately use and interpretation [@Araujo2019]. In the recent years, there has been an increase in the number of software packages and tools to assist ecologists with the development of species distribution models.
 
 As @Kass2024-vy point out, this increase in the diversity of packages (most of them in the **R** language) is a good thing, as it can accommodate multiple workflows, and contributes to the adoption of good practices in the field. However, because the practice of species distribution modeling and validation often involves diverse data types from different sources, many existing packages have been designed independently, and therefore may suffer with interoperability issues when attempting to use them together. As @Kellner2025 highlight, about 20% of publications for abundance or distribution models are not reproducible because of issues in package dependencies.
 
