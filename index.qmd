@@ -4,21 +4,31 @@ authors:
   - name: Timothée Poisot
     affiliation:
         - ref: udem
-    roles: writing
+    roles:
+        - writing
+        - software
     email: timothee.poisot@umontreal.ca
     corresponding: true
   - name: Ariane Bussières-Fournel
     affiliation:
         - ref: udem
     email: ariane.bussieres-fournel@umontreal.ca
+    roles:
+        - editing
   - name: Gabriel Dansereau
     affiliation:
         - ref: udem
     email: gabriel.dansereau@umontreal.ca
+    roles:
+        - editing
+        - software
   - name: Michael D. Catchen
     affiliation:
         - ref: udem
     email: michael.catchen@umontreal.ca
+    roles:
+        - editing
+        - software
 affiliations:
     - id: udem
       name: Université de Montréal
@@ -48,13 +58,13 @@ As a result, tools that can provide an integrated environment are important. In 
 
 The **SDT** package is seeing increased adoption, and is now used as part of the BON-in-a-Box project [@Griffith2024], which seeks to facilitate the calculation and reporting of biodiversity indicators supporting the Kunming-Montréal Global Biodiversity Framework, to remove barriers to biodiversity data analysis [@Gonzalez2023]. In this manuscript, we describe (i) the high-level functionalities of the package, (ii) core design principles that facilitate long-term maintenance and development, and (iii) illustrative case studies with fully reproducible Jupyter notebooks.
 
+**TODO** frontload some of the cool parts to justify the tool description
+
 # Application description
 
 **SpeciesDistributionToolkit** is released as a package for the **Julia** programming language [@Bezanson2017], licensed under the open-source initiative approved MIT license. It has evolved from a previous collection of packages to handle GBIF and raster data [@Dansereau2021], and now provides extended functionalities and improved performances. The package is registered in the **Julia** package repository and can be downloaded and installed anonymously. It is compatible with **Julia** version 1.8 and above. The full source and complete edition history is available at [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]. This page additionally has a link to the documentation, containing a full reference for the package functions, a series of briefs how-to examples, and longer vignettes showcasing more integrative tutorials.
 
   [`https://github.com/PoisotLab/SpeciesDistributionToolkit.jl`]: https://github.com/PoisotLab/SpeciesDistributionToolkit.jl
-
-**TODO** frontload some of the cool parts to justify the tool description
 
 ## Component packages
 
