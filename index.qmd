@@ -74,7 +74,7 @@ The **SDT** package benefits from close integration with other packages in the *
 
 ![Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships (black arrows).]
 
-  [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships (black arrows).]: figures/SDT.png {#fig-components}
+  [Overview of the packages included in **SpeciesDistributionToolkit**. The packages are color-coded by intended use, and their more specific content is presented in the main text. Note that because the package relies on *interfaces* to facilitate code interoperability, there are only three dependency relationships (black arrows).]: figures/structure.drawio.png {#fig-components}
 
 ## Component packages
 
