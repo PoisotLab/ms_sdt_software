@@ -29,14 +29,14 @@
 
   show figure.caption: it => {
     set align(left)
-    set par(leading: 0.55em, hanging-indent: 0pt, justify: false)
-    text(10pt, it)
+    set par(leading: 0.35em, hanging-indent: 0pt, justify: false)
+    text(8pt, it)
   }
 
     // show bibliography: set text(7pt)
 
   // Set the body font.
-  set text(font: "Libertinus Serif", size: 12pt)
+  set text(font: "Libertinus Serif", size: 10pt)
 
   // Configure the page.
   set page(
@@ -46,7 +46,7 @@
       (x: 41.5pt, top: 80.51pt, bottom: 89.51pt)
     } else {
       (
-        x: (80pt / 216mm) * 100%,
+        x: (40pt / 216mm) * 100%,
         top: (55pt / 279mm) * 100%,
         bottom: (64pt / 279mm) * 100%,
       )
@@ -65,17 +65,14 @@
   show raw: set text(font: "JuliaMono", rgb("#232323"))
 
   // Paragraph options
-  set par(leading: 1em, first-line-indent: 0pt)
-  show heading.where(level: 1): set text(14pt, rgb("#114f54"), font: "Inter", weight: "medium")
-  show heading.where(level: 2): set text(13pt, rgb("#2e5385"), font: "Inter", weight: "regular", style: "italic")
+  set par(leading: 0.5em, first-line-indent: 0pt)
+  show heading.where(level: 1): set text(12pt, rgb("#114f54"), font: "Inter", weight: "medium")
+  show heading.where(level: 2): set text(10pt, rgb("#2e5385"), font: "Inter", weight: "regular", style: "italic")
   show heading.where(level: 1): it => block(width: 100%)[
-    #v(1.2em)
     #block(it.body)
-    #v(1em)
   ]
   show heading.where(level: 2): it => block(width: 100%)[
     #block(it.body)
-    #v(1em)
   ]
 
   // Display the paper's title.
@@ -86,7 +83,7 @@
   if authors.len() > 0 {
     box(inset: (y: 10pt), {
       authors.map(author => {
-        text(12pt, author.name)
+        text(10pt, author.name)
         h(1pt)
         if "affiliations" in author {
           super(author.affiliations)
@@ -96,11 +93,11 @@
   }
   v(2mm, weak: true)
   if affiliations.len() > 0 {
-    box(inset: (y: 12pt), {
+    box(inset: (y: 10pt), {
       affiliations.map(affiliation => {
-        text(12pt, weight: "semibold", super(affiliation.number))
+        text(9pt, weight: "semibold", super(affiliation.number))
         h(2pt)
-        text(12pt, affiliation.name)
+        text(9pt, affiliation.name)
       }).join("; ", last: "; ")
     })
   }
@@ -127,9 +124,9 @@
   v(1cm)
 
   // Start two column mode and configure paragraph properties.
-  // show: columns.with(2, gutter: 14pt)
+  show: columns.with(2, gutter: 14pt)
   set par(justify: true, first-line-indent: 0em)
-  show par: set block(spacing: 1.2em)
+  show par: set block(spacing: 0.65em)
 
   // Display the paper's contents.
   body
