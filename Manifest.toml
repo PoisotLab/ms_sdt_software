@@ -972,10 +972,10 @@ uuid = "aacddb02-875f-59d6-b918-886e6ef4fbf8"
 version = "3.1.1+0"
 
 [[deps.Kerberos_krb5_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
-git-tree-sha1 = "60274b4ab38e8d1248216fe6b6ace75ae09b0502"
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "0f2899fdadaab4b8f57db558ba21bdb4fb52f1f0"
 uuid = "b39eb1a6-c29a-53d7-8c32-632cd16f18da"
-version = "1.19.3+0"
+version = "1.21.3+0"
 
 [[deps.KernelDensity]]
 deps = ["Distributions", "DocStringExtensions", "FFTW", "Interpolations", "StatsBase"]
@@ -1727,9 +1727,9 @@ version = "1.0.0"
 
 [[deps.SimpleSDMLayers]]
 deps = ["ArchGDAL", "Distances", "Proj", "Statistics", "StatsBase", "Tables", "TestItems"]
-git-tree-sha1 = "74569a493dcda41b8cb0022d62c1002c4240c5b7"
+git-tree-sha1 = "20751a5597cea447ea7567ced4cb3149bf274c59"
 uuid = "2c645270-77db-11e9-22c3-0f302a89c64c"
-version = "1.0.6"
+version = "1.0.7"
 
 [[deps.SimpleTraits]]
 deps = ["InteractiveUtils", "MacroTools"]
