@@ -62,7 +62,7 @@
   set list(indent: 10pt, body-indent: 9pt)
 
   // Code
-  show raw: set text(font: "JuliaMono", rgb("#232323"))
+  show raw: set text(font: "Iosevka", rgb("#232323"))
 
   // Paragraph options
   set par(leading: 1em, first-line-indent: 0pt)
@@ -81,6 +81,8 @@
   // Display the paper's title.
   text(18pt, rgb("#1d8265"), weight: "light",  font: "Inter", title)
   v(8.35mm, weak: true)
+
+  show "\@": "@"
 
 
   if authors.len() > 0 {
@@ -102,6 +104,21 @@
         h(2pt)
         text(12pt, affiliation.name)
       }).join("; ", last: "; ")
+    })
+  }
+  v(2mm, weak: true)
+  if authors.len() > 0 {
+    box(inset: (y: 10pt), {
+      authors.map(author => {
+       if "corresponding" in author {
+          text(10pt, "Correspondence to ")
+          text(10pt, author.name)
+          h(5pt)
+          sym.dash.em
+          h(5pt)
+          raw(author.email)
+        }
+      }).join("")
     })
   }
 

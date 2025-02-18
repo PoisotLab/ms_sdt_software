@@ -13,6 +13,9 @@ $if(by-author)$
                     name: "$it.name.literal$",
                     affiliations: [$for(it.affiliations)$$it.number$$sep$,$endfor$],
                     email: "$it.email$",
+                    $if(it.attributes.corresponding)$
+                    corresponding: true,
+                    $endif$
                     orcid: "$it.orcid$"
                 ),
             $endif$
@@ -24,7 +27,7 @@ $if(by-affiliation)$
         $for(by-affiliation)$
             $if(it.name)$
                 (
-                    name: "$it.name$",
+                    name: "$it.name$, $it.department$, $it.city$ $it.region$, $it.country$",
                     number: "$it.number$",
                 ),
             $endif$
