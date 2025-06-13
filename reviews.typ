@@ -48,24 +48,54 @@ As I note below, I'd like to see the authors make a stronger case in the conclus
 There were no line numbers in the version of the paper I reviewed so I had to use quotes below.
 
 #response[
-  TODO LINE NUMBERS
+  We apologize for the oversight, and have added line numbers.
 ]
 
 "The ability to link data to these steps is central to support the correct interpretation of these models"
 
 I don't understand what this means, can you clarify what it means to "link" data to a step?
 
+#response[
+  We have clarified this sentence to emphasize that we care about having data in the right format for each of these different steps.
+]
+
 Should be "In recent years", not "In the recent years"
+
+#response[
+  Indeed - fixed.
+]
 
 "Independently" not "independentl"
 
+#response[
+  Corrected. 
+]
+
 "20% of publications" Not sure how you are getting this number, based on Kellner 2025 it should be 12% (17/141 papers that had code) or 3% (17/497 of all papers)
+
+#response[  
+  In Kellner 2025, 17 out 97 failures to reproduced in the presence of code were due to missing packages. This is about 20% of the papers that can be evaluated for this criteria. We have clarified the sentence.
+]
 
 "SDT uses the built-in Julia package manager..."
 
-It is unclear to me what specific advantage the monorepo--> multiple component packages approach has for *users*. Presumably when someone updates or newly installs SDT, they'll pull the code from the entire repository via the package manager (?). So what specific advantage is there for a *user* to think about SDT as multiple component packages in a monorepo vs just a single overarching package SDT? I understand for developers it makes sense to break things up into parts like this for organizational reasons etc. But for average users it might just be confusing to conceptualize it this way. 
+It is unclear to me what specific advantage the monorepo--> multiple component packages approach has for *users*. Presumably when someone updates or newly installs SDT, they'll pull the code from the entire repository via the package manager (?).
+
+#response[
+  This is correct. Installing the main package will result in all dependencies being installed, and this is not specific to a monorepo. We made no changes to the manuscript in response to this point, but wanted to establish this as the baseline moving forward.
+]
+
+So what specific advantage is there for a *user* to think about SDT as multiple component packages in a monorepo vs just a single overarching package SDT? I understand for developers it makes sense to break things up into parts like this for organizational reasons etc. But for average users it might just be confusing to conceptualize it this way. 
+
+#response[
+  Assuming that a user wants to look at the code for a specific function, having a monorepo means that all the code will live in the same place. It makes inspection of the package easier, and more importantly, it provides some additional guarantees that the entire collection of packages is working as a cohesive unit. We have clarified the increased ease of inspecting the code.
+]
 
 I see later you note you can install the component packages separately, so maybe worth making that point earlier in the paper.
+
+#response[
+  We have clarified this point earlier in the "Application description" section.
+]
 
 "Following a constructive cost model analysis..."
 
@@ -88,7 +118,7 @@ One challenge I have found when doing SDMs is with GBIF data is that they want y
 This looks really cool, glad it is included.
 
 #response[
-  thanks
+  Thank you!
 ]
 
 "Finally SDeMo provides tools for training and education"
@@ -96,25 +126,25 @@ This looks really cool, glad it is included.
 What do you mean by "education" here? Education in the sense of users learning how to use these models? If so what specific features are there for users to learn things? I would not use the word "education" when you really mean "model training" or "learning".
 
 #response[
-  todo clarify
+  We do indeed mean "education" in the didactic sense. We have clarified that **SDeMo** is a high-level interface to train SDMs, and outline at the end of the paragraph why some design choices make it useful when teaching. We use this package for both workshops and a graduate level class in predictive modeling.
 ]
 
 Can you provide a citation for the BIOCLIM classifier? I have never heard of this, I think of BIOCLIM as being the set of bioclimatic variables, not a statistical analysis tool.
 
 #response[
-  todo cite + clarify
+  The bioclimatic variables are usually refered to as BioClim, whereas BIOCLIM is the model introduced by Nix in 1986 (using, confusingly, the BioClim variables). We have added a reference to a more recent paper outligning the development of the model in relationship to work on the bioclimatic variables themselves.
 ]
 
 Are there plans for additional classifiers? That's likely to be the thing users want the most, I would guess, considering the popularity of other models like GAM, Maxent, etc. for SDMs
 
 #response[
-  todo - yes
+  The structure of **SDeMo** makes it easy to extend. There are no particular plans to add more built-in classifiers (with maybe the exception of boosting functions), but contributions by users are welcome. We have clarified this point.
 ]
 
 I realize you can't provide every detail in a paper like this (vs offloading some of it to the notebooks), but as someone who sometimes builds SDMs, I'd be specifically looking for details on what approaches are available for dividing training/testing data and what statistics/methods are available for evaluation. So a short summary of this info would be helpful.
 
 #response[
-  clarify only the basics, stratified by prevalence, work ongoing to develop additional techniques using e.g. space
+  clarify only the basics, stratified by prevalence, work ongoing to develop additional techniques using e.g. space - do this when introduction pseudoabsences, future work focusing on stratification
 ]
 
 "In practice, flexible (and more performant)..."

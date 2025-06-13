@@ -149,6 +149,9 @@
   show par: set block(spacing: 1.2em)
   set page(numbering: "1 of 1")
 
+  // Line numbers 
+  set par.line(numbering: "1")
+
   // Display the paper's contents.
   body
 }
