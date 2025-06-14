@@ -110,7 +110,9 @@ This is interesting, though I know nothing about this method. But what is the im
 One challenge I have found when doing SDMs is with GBIF data is that they want you to register the datasets you download to specific DOIs when you use them in a publication (https://www.gbif.org/citation-guidelines). With access to a nice API like this, some users may never think to check the proper way to cite these data. Is there a way to make this clear in your package? Or perhaps this is already done?
 
 #response[
-  yes, add example with a DOI to the vignette
+  This is indeed already implemented. We have updated the code in the SDM notebook to show how this can be done (`GBIF.download(doi)`), and added a few sentences explaining that this is best practice. We have also added a sentence to the main text to clarify this.
+
+  *TODO*  add citation to the data in the demo section
 ]
 
 "Fauxcurrences"
@@ -126,7 +128,7 @@ This looks really cool, glad it is included.
 What do you mean by "education" here? Education in the sense of users learning how to use these models? If so what specific features are there for users to learn things? I would not use the word "education" when you really mean "model training" or "learning".
 
 #response[
-  We do indeed mean "education" in the didactic sense. We have clarified that **SDeMo** is a high-level interface to train SDMs, and outline at the end of the paragraph why some design choices make it useful when teaching. We use this package for both workshops and a graduate level class in predictive modeling.
+  We do indeed mean "education" in the didactic sense. We have clarified that *SDeMo* is a high-level interface to train SDMs, and outline at the end of the paragraph why some design choices make it useful when teaching. We use this package for both workshops and a graduate level class in predictive modeling.
 ]
 
 Can you provide a citation for the BIOCLIM classifier? I have never heard of this, I think of BIOCLIM as being the set of bioclimatic variables, not a statistical analysis tool.
@@ -138,7 +140,7 @@ Can you provide a citation for the BIOCLIM classifier? I have never heard of thi
 Are there plans for additional classifiers? That's likely to be the thing users want the most, I would guess, considering the popularity of other models like GAM, Maxent, etc. for SDMs
 
 #response[
-  The structure of **SDeMo** makes it easy to extend. There are no particular plans to add more built-in classifiers (with maybe the exception of boosting functions), but contributions by users are welcome. We have clarified this point.
+  The structure of *SDeMo* makes it easy to extend. There are no particular plans to add more built-in classifiers (with maybe the exception of boosting functions), but contributions by users are welcome. We have clarified this point.
 ]
 
 I realize you can't provide every detail in a paper like this (vs offloading some of it to the notebooks), but as someone who sometimes builds SDMs, I'd be specifically looking for details on what approaches are available for dividing training/testing data and what statistics/methods are available for evaluation. So a short summary of this info would be helpful.
@@ -152,7 +154,7 @@ I realize you can't provide every detail in a paper like this (vs offloading som
 Can you use the recommended MLJ via your package? It's unclear from the way this is worded.
 
 #response[
-  yes - not directly, but also table interface exists
+  We have clarified this section of the main text. MLJ can be integrated with SDT, but this is is a technical step that goes beyond the scope of this paper. SDT can be  extended to use any arbitrary function for classification and data transformation, which includes using code from MLJ.
 ]
 
 As you note in the intro, right now, most SDM development is done in in R. Do you have specific reasons for why you think scientists should consider switching to Julia to use your software? Are there specific advantages over what's available for R already, such as biomod2?
