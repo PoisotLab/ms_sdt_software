@@ -82,13 +82,13 @@ Should be "In recent years", not "In the recent years"
 It is unclear to me what specific advantage the monorepo--> multiple component packages approach has for *users*. Presumably when someone updates or newly installs SDT, they'll pull the code from the entire repository via the package manager (?).
 
 #response[
-  This is correct. Installing the main package will result in all dependencies being installed, and this is not specific to a monorepo. We made no changes to the manuscript in response to this point, but wanted to establish this as the baseline moving forward.
+  You are correct about the installation process. The Julia package manager handles dependencies automatically regardless of structure. We made no changes to the manuscript in response to this point, but wanted to establish this as the baseline moving forward.
 ]
 
 So what specific advantage is there for a *user* to think about SDT as multiple component packages in a monorepo vs just a single overarching package SDT? I understand for developers it makes sense to break things up into parts like this for organizational reasons etc. But for average users it might just be confusing to conceptualize it this way. 
 
 #response[
-  Assuming that a user wants to look at the code for a specific function, having a monorepo means that all the code will live in the same place. It makes inspection of the package easier, and more importantly, it provides some additional guarantees that the entire collection of packages is working as a cohesive unit. We have clarified the increased ease of inspecting the code.
+  A monorepo offers a significant advantage: it provides a single source of truth for documentation and issue tracking. In other words, users do not need to know specifically what component package is responsible for a bug in order to open an issue, and everything is centrally managed. The same logic goes for documentation: although each component package has its own technical documentation, the manual that users are likely to consult is centralized and provides examples that naturally integrate functionalities from all component packages. In addition, a monorepo creates a unified codebase where all functionalities are easily discoverable - users do not need to navigate multiple repositories to understand how components interact.  We have expanded our explanation in the manuscript to highlight these advantages.
 ]
 
 I see later you note you can install the component packages separately, so maybe worth making that point earlier in the paper.
