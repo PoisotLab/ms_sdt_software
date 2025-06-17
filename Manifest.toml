@@ -2,7 +2,7 @@
 
 julia_version = "1.11.5"
 manifest_format = "2.0"
-project_hash = "a036c3d73390279655b8744ecb70d666402db715"
+project_hash = "f9e8b33f71d271076641f0b2c0620dc6bb78ea21"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
@@ -1489,9 +1489,12 @@ version = "0.2.1"
 
 [[deps.SDeMo]]
 deps = ["Distributions", "JSON", "LinearAlgebra", "MultivariateStats", "Random", "Statistics", "StatsAPI", "StatsBase", "TestItems"]
-git-tree-sha1 = "921a5e21adf0bdb813de63291b9e921669967122"
+git-tree-sha1 = "d44aafb94b0ff5549cc78e7298fbf1aafe0f0b3c"
+repo-rev = "bug/sdemo/varsel-output"
+repo-subdir = "SDeMo"
+repo-url = "https://github.com/PoisotLab/SpeciesDistributionToolkit.jl.git"
 uuid = "3e5feb82-bcca-434d-9cd5-c11731a21467"
-version = "1.4.0"
+version = "1.4.1"
 
 [[deps.SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
@@ -1640,7 +1643,9 @@ weakdeps = ["ChainRulesCore"]
 
 [[deps.SpeciesDistributionToolkit]]
 deps = ["Distances", "Downloads", "Fauxcurrences", "GBIF", "GeoJSON", "HTTP", "OccurrencesInterface", "Phylopic", "PolygonOps", "PseudoAbsences", "Reexport", "SDeMo", "SimpleSDMDatasets", "SimpleSDMLayers", "SimpleSDMPolygons", "StatsBase", "TestItems", "ZipArchives"]
-git-tree-sha1 = "427e238a83dbbf92d02358ea68e9d2ce19be9d02"
+git-tree-sha1 = "5b16089b9aee607fdf213f87e5e5e404392b72c8"
+repo-rev = "bug/sdemo/varsel-output"
+repo-url = "https://github.com/PoisotLab/SpeciesDistributionToolkit.jl.git"
 uuid = "72b53823-5c0b-4575-ad0e-8e97227ad13b"
 version = "1.6.1"
 
