@@ -145,8 +145,7 @@
 
   // Start two column mode and configure paragraph properties.
   // show: columns.with(2, gutter: 14pt)
-  set par(justify: true, first-line-indent: 0em)
-  show par: set block(spacing: 1.2em)
+  set par(justify: true, first-line-indent: 0em, spacing: 1.2em)
   set page(numbering: "1 of 1")
 
   // Line numbers 
