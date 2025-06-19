@@ -88,7 +88,7 @@ It is unclear to me what specific advantage the monorepo--> multiple component p
 So what specific advantage is there for a *user* to think about SDT as multiple component packages in a monorepo vs just a single overarching package SDT? I understand for developers it makes sense to break things up into parts like this for organizational reasons etc. But for average users it might just be confusing to conceptualize it this way. 
 
 #response[
-  A monorepo offers a significant advantage: it provides a single source of truth for documentation and issue tracking. In other words, users do not need to know specifically what component package is responsible for a bug in order to open an issue, and everything is centrally managed. The same logic goes for documentation: although each component package has its own technical documentation, the manual that users are likely to consult is centralized and provides examples that naturally integrate functionalities from all component packages. In addition, a monorepo creates a unified codebase where all functionalities are easily discoverable - users do not need to navigate multiple repositories to understand how components interact.  We have expanded our explanation in the manuscript to highlight these advantages.
+  A monorepo offers a significant advantage: it provides a single source of truth for documentation and issue tracking. In other words, users do not need to know specifically what component package is responsible for a bug in order to open an issue, and everything is centrally managed. The same logic goes for documentation: although each component package has its own technical documentation, the manual that users are likely to consult is centralized and provides examples that naturally integrate functionalities from all component packages. In addition, a monorepo creates a unified codebase where all functionalities are easily discoverable - users do not need to navigate multiple repositories to understand how components interact. We have expanded our explanation in the manuscript to highlight these advantages.
 ]
 
 I see later you note you can install the component packages separately, so maybe worth making that point earlier in the paper.
@@ -102,7 +102,7 @@ I see later you note you can install the component packages separately, so maybe
 This is interesting, though I know nothing about this method. But what is the importance of the \$325k? I.e., what would you actually use this information for?
 
 #response[
-  This information was mostly relevant for us., to assess the value of the softwrae contributon for _e.g._ grant applications. We have removed it from the manuscript.
+  This information was mostly relevant for us, to assess the value of the software contributon for _e.g._ grant applications. We have removed it from the manuscript.
 ]
 
 "The GBIF package"
@@ -110,9 +110,7 @@ This is interesting, though I know nothing about this method. But what is the im
 One challenge I have found when doing SDMs is with GBIF data is that they want you to register the datasets you download to specific DOIs when you use them in a publication (https://www.gbif.org/citation-guidelines). With access to a nice API like this, some users may never think to check the proper way to cite these data. Is there a way to make this clear in your package? Or perhaps this is already done?
 
 #response[
-  This is indeed already implemented. We have updated the code in the SDM notebook to show how this can be done (`GBIF.download(doi)`), and added a few sentences explaining that this is best practice. We have also added a sentence to the main text to clarify this.
-
-  *TODO*  add citation to the data in the demo section
+  This is indeed already implemented. We have updated the code in the SDM notebook to show how this can be done (`GBIF.download(doi)`), and added a few sentences explaining that this is best practice. We have also added a sentence to the main text to clarify this (with a citation to the dataset).
 ]
 
 "Fauxcurrences"
@@ -134,7 +132,7 @@ What do you mean by "education" here? Education in the sense of users learning h
 Can you provide a citation for the BIOCLIM classifier? I have never heard of this, I think of BIOCLIM as being the set of bioclimatic variables, not a statistical analysis tool.
 
 #response[
-  The bioclimatic variables are usually refered to as BioClim, whereas BIOCLIM is the model introduced by Nix in 1986 (using, confusingly, the BioClim variables). We have added a reference to a more recent paper outligning the development of the model in relationship to work on the bioclimatic variables themselves.
+  We have added a reference to a more recent paper outligning the development of the model in relationship to work on the bioclimatic variables themselves.
 ]
 
 Are there plans for additional classifiers? That's likely to be the thing users want the most, I would guess, considering the popularity of other models like GAM, Maxent, etc. for SDMs
@@ -146,7 +144,7 @@ Are there plans for additional classifiers? That's likely to be the thing users 
 I realize you can't provide every detail in a paper like this (vs offloading some of it to the notebooks), but as someone who sometimes builds SDMs, I'd be specifically looking for details on what approaches are available for dividing training/testing data and what statistics/methods are available for evaluation. So a short summary of this info would be helpful.
 
 #response[
-  clarify only the basics, stratified by prevalence, work ongoing to develop additional techniques using e.g. space - do this when introduction pseudoabsences, future work focusing on stratification
+  We have clarified that the package will always at least maintain class balance, but that users can provide their own splits for corss-validation, together with a description of future plans for more stratified methods.
 ]
 
 "In practice, flexible (and more performant)..."
@@ -157,20 +155,14 @@ Can you use the recommended MLJ via your package? It's unclear from the way this
   We have clarified this section of the main text. MLJ can be integrated with SDT, but this is is a technical step that goes beyond the scope of this paper. SDT can be  extended to use any arbitrary function for classification and data transformation, which includes using code from MLJ.
 ]
 
-As you note in the intro, right now, most SDM development is done in in R. Do you have specific reasons for why you think scientists should consider switching to Julia to use your software? Are there specific advantages over what's available for R already, such as biomod2?
+As you note in the intro, right now, most SDM development is done in in R. Do you have specific reasons for why you think scientists should consider switching to Julia to use your software? Are there specific advantages over what's available for R already, such as biomod2? In general I think the software looks really cool, so the authors ought to make it a bit more clear why someone would use SDT in Julia over the other existing, long term options. Maybe highlight some features not found in any R packages etc.?
 
 #response[
-  todo - list a few responses in the text + summarize
-]
-
-In general I think the software looks really cool, so the authors ought to make it a bit more clear why someone would use SDT in Julia over the other existing, long term options. Maybe highlight some features not found in any R packages etc.?
-
-#response[
-  not features so much as very tight integration, have a longer discussion about julia design principles
+  We have added a few explanations at the end of the text.
 ]
 
 I looked through the provided Jupyter notebooks and both the explanations and the code seemed clear to me. I am just a beginner Julia user though, so I can't provide detailed comments on them
 
 #response[
-  thanks, mention, changes as part of revisions
+  Thank you - we have further clarified some of the steps during the revisions.
 ]
