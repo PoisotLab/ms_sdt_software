@@ -75,7 +75,7 @@ An overview of the **SDT** package is given in @fig-overview. The project is org
 
 ## Component packages
 
-The **SDT** package primarily provides integration between the other packages via method overloading (reusing method names for intuitive and concise code), allowing to efficiently join packages together [@Roesch2023]. Additional functionalities that reside in the top-level package are the generation of pseudo-absences [@Barbet-Massin2012], access to the `gadm.org` database, handling of polygon data and zonal statistics, and various quality of life methods. Because of the modular nature of the code, any of these functions can be transparently moved to their own packages without affecting reproducibility. Note that all packages can still be installed (and would be fully functional) independently.
+The **SDT** package primarily provides integration between the other packages via method overloading (reusing method names for intuitive and concise code), allowing to efficiently join packages together [@Roesch2023]. Additional functionalities that reside in the top-level package are the handling of polygon data and zonal statistics, and various quality of life methods. Because of the modular nature of the code, any of these functions can be transparently moved to their own packages without affecting reproducibility. Note that all packages can still be installed (and would be fully functional) independently.
 
 The **SimpleSDMLayers** package offers a series of types to represent raster data in arbitrary projections defined by a proj string [@Evenden2024]. This package provides the main data representation for most spatial functionalities that **SDT** supports, and handles saving and loading data. It also contains utility functions to deal with raster data, including interpolation to different spatial grids and CRS, rescaling and quantization of data, masking, and most mathematical operations that can be applied to rasters.
 
@@ -101,7 +101,7 @@ In this section, we provide a series of case studies to illustrate the use of th
 
 ## Landcover consensus map
 
-In this case study (Supp. Mat. 1), we retrieve the land cover data from @Tuanmu2014, clip them to a GeoJSON polygon describing the country of Paraguay (**SDT** can download data directly from `gadm.org`), and apply the `mosaic` operation to figure out which class is the most locally abundant. This case study uses the **SimpleSDMDatasets** package to download (and locally cache) the raster data, as well as the **SimpleSDMLayers** package to provide basic utility functions on raster data. The results are presented in @fig-landcover-consensus.
+In this case study (Supp. Mat. 1), we retrieve the land cover data from @Tuanmu2014, clip them to a GeoJSON polygon describing the country of Paraguay (**SimpleSDMPolygons** can download data directly from `gadm.org`), and apply the `mosaic` operation to figure out which class is the most locally abundant. This case study uses the **SimpleSDMDatasets** package to download (and locally cache) the raster data, as well as the **SimpleSDMLayers** package to provide basic utility functions on raster data. The results are presented in @fig-landcover-consensus.
 
 {{< embed appendix/consensus.ipynb#fig-landcover-consensus >}}
 
