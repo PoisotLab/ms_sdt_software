@@ -29,14 +29,17 @@
 
   show figure.caption: it => {
     set align(left)
-    set par(leading: 0.55em, hanging-indent: 0pt, justify: false)
-    text(10pt, it)
+    set par(leading: 0.55em, hanging-indent: 5pt, justify: false)
+    v(10pt)
+    text(10pt, it, font: "TeX Gyre Heros")
   }
 
     // show bibliography: set text(7pt)
 
   // Set the body font.
-  set text(font: "Libertinus Serif", size: 12pt)
+  set text(font: "TeX Gyre Pagella", size: 12pt)
+  show math.equation: set text(font: "TeX Gyre Pagella Math")
+  show raw: set text(font: "TeX Gyre Heros", rgb("#232323"))
 
   // Configure the page.
   set page(
@@ -61,25 +64,23 @@
   set enum(indent: 10pt, body-indent: 9pt)
   set list(indent: 10pt, body-indent: 9pt)
 
-  // Code
-  show raw: set text(font: "Iosevka", rgb("#232323"))
-
   // Paragraph options
   set par(leading: 1em, first-line-indent: 0pt)
-  show heading.where(level: 1): set text(14pt, rgb("#114f54"), font: "Inter", weight: "medium")
-  show heading.where(level: 2): set text(13pt, rgb("#2e5385"), font: "Inter", weight: "regular", style: "italic")
+  show heading.where(level: 1): set text(14pt, rgb("#303030"), font: "TeX Gyre Heros", weight: "bold")
+  show heading.where(level: 2): set text(13pt, rgb("#606060"), font: "TeX Gyre Heros", weight: "regular")
   show heading.where(level: 1): it => block(width: 100%)[
     #v(1.2em)
     #block(it.body)
     #v(1em)
   ]
   show heading.where(level: 2): it => block(width: 100%)[
+    #v(0.3em)
     #block(it.body)
-    #v(1em)
+    #v(0.5em)
   ]
 
   // Display the paper's title.
-  text(18pt, rgb("#1d8265"), weight: "light",  font: "Inter", title)
+  text(18pt, rgb("#000000"), weight: "bold",  font: "TeX Gyre Heros", title)
   v(8.35mm, weak: true)
 
   show "\@": "@"
@@ -145,11 +146,12 @@
 
   // Start two column mode and configure paragraph properties.
   // show: columns.with(2, gutter: 14pt)
-  set par(justify: true, first-line-indent: 0em, spacing: 1.2em)
+  set par(justify: false, first-line-indent: 0em, spacing: 1.2em)
   set page(numbering: "1 of 1")
 
   // Line numbers 
-  set par.line(numbering: "1")
+  // set par.line(numbering: "1")
+  set par.line(numbering: n => text(size: 6pt, font: "TeX Gyre Heros")[#n])
 
   // Display the paper's contents.
   body
