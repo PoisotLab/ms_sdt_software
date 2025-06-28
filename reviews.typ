@@ -4,7 +4,7 @@
   ]
 }
 
-= Editorial decsion
+= Editorial decision
 
 Dear authors, we have received two reviews of your article, both very positive. However, the reviewers also posted some interesting comments that should be addressed before the manuscript can be accepted and recommended. We therefore strongly encourage you to include these suggestions in a new article and resubmit the manuscript. See the details of the reviews below.
 We look forward to the new version of the article.
